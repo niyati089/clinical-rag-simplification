@@ -1,0 +1,54 @@
+CANCER TREATMENT — ENDOCRINE THERAPY AND RADIOTHERAPY REFERENCE
+
+HORMONE RECEPTOR-POSITIVE BREAST CANCER — ENDOCRINE THERAPY
+
+TAMOXIFEN
+- Class: Selective Oestrogen Receptor Modulator (SERM)
+- Mechanism: Competitively inhibits oestrogen binding to ER in breast tissue
+- Indication: Adjuvant therapy for ER+/PR+ breast cancer (pre- and post-menopausal women; also used in men)
+- Standard dose: 20 mg once daily orally
+- Duration: 5 years (standard); 10 years if high risk of recurrence
+- CRITICAL: Do NOT stop Tamoxifen without discussing with oncologist — early discontinuation significantly increases recurrence risk
+
+Side effects and their significance:
+- Hot flushes, night sweats (vasomotor symptoms) — common; manage with lifestyle measures; pharmacological options available if severe
+- Vaginal dryness or discharge — report any abnormal or unusual vaginal bleeding promptly (risk of endometrial changes)
+- Thromboembolism risk (DVT/PE): Tamoxifen increases the risk. Report sudden leg swelling, calf pain, shortness of breath, or chest pain immediately
+- Endometrial changes: Annual gynaecological review; report any post-menopausal bleeding urgently
+- Mood changes: Document and report to oncologist if severe
+- Teratogenicity: Avoid pregnancy during treatment and for 2 months after stopping. Use reliable non-hormonal contraception
+
+Drug interactions:
+- Strong CYP2D6 inhibitors (e.g., Paroxetine, Fluoxetine) significantly reduce Tamoxifen efficacy — use alternative antidepressants
+- Warfarin: Tamoxifen can enhance anticoagulant effect; monitor INR closely
+
+AROMATASE INHIBITORS (Anastrozole, Letrozole, Exemestane)
+- Indication: Post-menopausal ER+ breast cancer (or after ovarian suppression in pre-menopausal women)
+- Mechanism: Inhibit aromatase enzyme → reduce peripheral oestrogen synthesis
+- Side effects: Musculoskeletal pain (arthralgia/myalgia), bone density loss → monitor with DEXA scan; osteoporosis risk
+- Bone protection: Calcium and Vitamin D supplementation; consider bisphosphonate
+
+ADJUVANT RADIOTHERAPY — BREAST CANCER
+
+Indications:
+- After breast-conserving surgery (wide local excision): whole-breast radiotherapy reduces local recurrence risk by approximately 50%
+- After mastectomy in high-risk patients (positive lymph nodes, large tumour)
+
+Standard schedules:
+- Hypofractionated: 15–16 fractions (3 weeks) — standard for most patients; equivalent efficacy to longer courses
+- Conventional: 25 fractions (5 weeks)
+
+Side effects (expected):
+- Skin: erythema (redness), desquamation, fatigue — usually temporary; resolves within weeks of completing treatment
+- Fatigue: common during and after treatment; usually improves within 4–6 weeks
+
+Long-term risks (less common):
+- Lymphoedema of the arm (especially after axillary treatment)
+- Radiation-induced cardiac toxicity (minimised with modern techniques — breath-hold, prone positioning)
+- Secondary malignancy risk (very small)
+
+Skin care during radiotherapy:
+- Wash area gently with mild, unscented soap
+- Avoid tight clothing over treated area
+- Avoid sun exposure during and for 1 year after treatment
+- Apply aqueous cream or recommended moisturiser to affected skin (not immediately before radiation)

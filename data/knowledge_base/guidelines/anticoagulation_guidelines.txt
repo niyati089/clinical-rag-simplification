@@ -1,0 +1,47 @@
+ANTICOAGULATION THERAPY — CLINICAL GUIDELINES SUMMARY
+
+INDICATIONS FOR ANTICOAGULATION
+Anticoagulation therapy is indicated for:
+- Venous thromboembolism (VTE): deep vein thrombosis (DVT) and pulmonary embolism (PE)
+- Non-valvular atrial fibrillation (AF) to reduce stroke risk
+- Mechanical heart valve replacement
+- Acute coronary syndrome (as adjunct to antiplatelet therapy)
+- Prevention of VTE in high-risk surgical patients
+
+DIRECT ORAL ANTICOAGULANTS (DOACs)
+DOACs are preferred over warfarin for most indications due to predictable pharmacokinetics and reduced monitoring burden.
+Common DOACs: Apixaban, Rivaroxaban, Dabigatran, Edoxaban.
+
+DURATION OF TREATMENT
+- Provoked VTE (reversible risk factor): minimum 3 months
+- Unprovoked VTE: minimum 3–6 months; consider long-term after risk-benefit assessment
+- Atrial fibrillation: usually indefinite in moderate-to-high-risk patients (CHA2DS2-VASc ≥ 2 in men, ≥ 3 in women)
+
+MAJOR BLEEDING RISK
+Anticoagulants increase the risk of bleeding. Patients should report:
+- Unusual bruising
+- Prolonged bleeding from cuts
+- Blood in urine (red or dark brown)
+- Black or tarry stools
+- Unexpected heavy menstrual bleeding
+- Coughing or vomiting blood
+- Severe or unusual headaches
+
+DRUG INTERACTIONS
+NSAIDs increase bleeding risk significantly and should be avoided in patients on anticoagulants.
+Aspirin co-administration increases bleeding risk and should only be used when specifically indicated (e.g., post-ACS).
+
+RENAL FUNCTION MONITORING
+Most DOACs are renally cleared. Renal function (eGFR) should be monitored at least annually and more frequently if eGFR < 60 mL/min/1.73m².
+
+REVERSAL AGENTS
+- Warfarin: Vitamin K, Prothrombin Complex Concentrate (PCC) for urgent reversal
+- Dabigatran: Idarucizumab (Praxbind)
+- Factor Xa inhibitors: Andexanet alfa
+
+PATIENT COUNSELLING KEY POINTS
+- Take medication at the same time every day
+- Never double a missed dose
+- Inform all healthcare providers (including dentists) of anticoagulant use
+- Carry an anticoagulant alert card at all times
+- Avoid contact sports or activities with high injury risk

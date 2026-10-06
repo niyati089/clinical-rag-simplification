@@ -1,0 +1,32 @@
+OUTPATIENT CLINIC LETTER — TYPE 2 DIABETES MANAGEMENT
+
+Dear [Patient Name],
+
+Thank you for attending the diabetic review clinic on [DATE].
+
+CURRENT MEDICATIONS:
+- Metformin 1000 mg twice daily with meals
+- Sitagliptin 100 mg once daily
+- Empagliflozin 10 mg once daily (morning)
+
+BLOOD RESULTS (most recent):
+- HbA1c: 8.4% (target: <7.0%)
+- eGFR: 62 mL/min/1.73m²
+- LDL cholesterol: 2.8 mmol/L
+
+ASSESSMENT:
+Your blood sugar control (HbA1c) remains above the recommended target of 7.0%. The kidney function (eGFR) is mildly reduced and needs monitoring.
+
+PLAN:
+1. Increase Metformin if tolerated; maximum dose is 2000 mg/day.
+2. Dietary review with a registered dietitian has been arranged.
+3. Begin self-monitoring of blood glucose — morning fasting levels and 2 hours after dinner.
+4. Foot examination performed today — no active ulceration. Please continue daily foot checks at home.
+
+WARNINGS:
+- If you develop sudden nausea, abdominal pain, or feel very unwell while on Empagliflozin, seek emergency care — this could indicate a rare but serious condition called diabetic ketoacidosis (DKA).
+- Do NOT take Metformin if you become acutely unwell (vomiting, diarrhoea) or are having surgery — contact your GP for guidance.
+
+FOLLOW-UP:
+Repeat HbA1c and renal function in 3 months.
+Ophthalmology (eye screening) appointment scheduled for next year.

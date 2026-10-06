@@ -1,0 +1,55 @@
+CARDIAC MEDICATIONS — PATIENT REFERENCE GUIDE
+
+ANTIPLATELET THERAPY
+
+Aspirin
+- Mechanism: Inhibits platelet aggregation by blocking COX-1 irreversibly
+- Common doses: 75–100 mg daily (long-term secondary prevention); 300 mg loading dose (acute ACS)
+- Indications: Secondary prevention after myocardial infarction, stroke, PCI; stable coronary artery disease
+- Side effects: GI irritation, increased bleeding risk
+- Take with or after food to reduce stomach irritation
+- Do NOT stop abruptly without medical advice after cardiac events
+
+Ticagrelor (Brilique)
+- Mechanism: Reversible P2Y12 inhibitor; faster onset than clopidogrel
+- Dose: 90 mg twice daily (for 12 months post-ACS); 60 mg twice daily (maintenance beyond 12 months)
+- Indication: Acute coronary syndrome (STEMI, NSTEMI), post-PCI
+- CRITICAL: Do NOT stop without consulting a cardiologist — risk of life-threatening stent thrombosis
+- Avoid: Strong CYP3A4 inhibitors (e.g., ketoconazole, clarithromycin); aspirin doses >100 mg/day
+- Side effects: Dyspnoea (common, usually mild), bleeding, bradycardia
+
+STATINS (CHOLESTEROL-LOWERING)
+
+Atorvastatin
+- High-intensity statin
+- Dose: 40–80 mg once daily (usually at night)
+- Indication: Primary/secondary prevention of cardiovascular events; post-ACS (80 mg)
+- Side effects: Myopathy (muscle pain), rarely rhabdomyolysis; liver enzyme elevation
+- Report: Unexplained muscle pain or weakness — rare risk of serious muscle breakdown
+
+BETA-BLOCKERS
+
+Metoprolol Succinate
+- Cardioselective beta-1 blocker
+- Dose: 25–200 mg once daily (extended release)
+- Indications: Heart failure (reduced ejection fraction), post-MI, angina, hypertension
+- Do NOT stop abruptly — may precipitate rebound angina or arrhythmia; taper dose
+- Caution: Asthma, COPD (relative contraindication); peripheral vascular disease
+
+ACE INHIBITORS
+
+Ramipril
+- Mechanism: Inhibits ACE → reduces angiotensin II → vasodilation + reduced aldosterone
+- Common doses: 1.25–10 mg once or twice daily
+- Indications: Hypertension, heart failure, post-MI cardioprotection, diabetic nephropathy
+- Common side effect: Persistent dry cough (switch to ARB if intolerable)
+- Serious warning: Angioedema (swelling of lips, tongue, throat) — STOP immediately and seek emergency care
+- Monitor: Renal function and potassium (especially when starting or dose-adjusting)
+- Avoid in pregnancy (teratogenic)
+
+PROTON PUMP INHIBITORS (for GI protection)
+
+Pantoprazole
+- Dose: 20–40 mg once daily (before breakfast)
+- Indication: Reduce GI bleeding risk, especially with dual antiplatelet therapy
+- Generally well tolerated; long-term use may reduce magnesium and vitamin B12 absorption

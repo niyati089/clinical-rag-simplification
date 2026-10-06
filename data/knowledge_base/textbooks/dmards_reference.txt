@@ -1,0 +1,49 @@
+DISEASE-MODIFYING ANTIRHEUMATIC DRUGS (DMARDs) — REFERENCE GUIDE
+
+CONVENTIONAL SYNTHETIC DMARDs (csDMARDs)
+
+METHOTREXATE (MTX)
+- Class: Folate antagonist; antiproliferative and anti-inflammatory
+- Indications: Rheumatoid arthritis (first-line DMARD), psoriasis, psoriatic arthritis
+- Dosing: Weekly administration — NEVER daily. Start 7.5–15 mg/week; titrate up to 25 mg/week
+- Co-prescribe: Folic acid 5 mg once weekly (take the day after Methotrexate) to reduce toxicity
+- CRITICAL SAFETY: Methotrexate taken daily instead of weekly has caused fatal toxicity — patients must be explicitly counselled
+- Monitoring: FBC, LFT, U&E every 8 weeks (when stable)
+- Serious adverse effects:
+  * Hepatotoxicity (liver damage) — monitor LFTs; avoid alcohol
+  * Myelosuppression (bone marrow suppression) — monitor FBC; seek urgent care for fever, sore throat, bruising
+  * Pulmonary toxicity (methotrexate pneumonitis) — report persistent dry cough, dyspnoea
+  * Teratogenicity — absolutely contraindicated in pregnancy; reliable contraception required during treatment and for 3 months after stopping in both sexes
+- Drug interactions:
+  * Trimethoprim / Co-trimoxazole — AVOID (enhances myelosuppression risk)
+  * NSAIDs — use with caution (can increase MTX levels)
+  * Probenecid — increases MTX toxicity
+- Patients should carry a Methotrexate alert card
+
+HYDROXYCHLOROQUINE
+- Mechanism: Inhibits toll-like receptor signalling; anti-inflammatory
+- Indication: Mild RA, systemic lupus erythematosus (SLE)
+- Dose: 200–400 mg daily (not exceeding 5 mg/kg ideal body weight/day)
+- Monitoring: Annual ophthalmology review — risk of retinal toxicity with long-term use (>5 years)
+- Generally well tolerated; GI side effects common initially
+
+SULFASALAZINE
+- Indication: RA, ankylosing spondylitis, inflammatory bowel disease with arthritis
+- Dose: 500 mg/day, increasing to 2–3 g/day over weeks
+- Monitoring: FBC and LFTs initially, then every 6 months
+- Avoid: Sulfonamide allergy, G6PD deficiency
+
+BIOLOGIC DMARDs
+
+ANTI-TNF AGENTS (e.g., Adalimumab, Etanercept, Infliximab)
+- Indication: Moderate-to-severe RA failing csDMARDs
+- Key safety considerations:
+  * Increased risk of serious infections (bacterial, tuberculosis reactivation, fungal)
+  * Screen for latent TB before initiating (Mantoux test / IGRA)
+  * Avoid live vaccines during treatment
+  * Monitor for signs of infection; suspend if serious infection develops
+  * Contraindicated in active TB, severe heart failure (NYHA III/IV), demyelinating disease
+
+JAK INHIBITORS (e.g., Baricitinib, Tofacitinib)
+- Oral targeted synthetic DMARDs
+- Monitor for: venous thromboembolism, cardiovascular events, lipid changes, haematological changes

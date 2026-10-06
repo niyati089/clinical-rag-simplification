@@ -1,0 +1,34 @@
+RHEUMATOLOGY CLINIC LETTER — RHEUMATOID ARTHRITIS
+
+Patient: [REDACTED] | Date: [DATE]
+
+DIAGNOSIS:
+Seropositive rheumatoid arthritis (RA), established disease, moderate activity.
+DAS28 score today: 4.2 (moderate disease activity)
+
+CURRENT MEDICATIONS:
+- Methotrexate 20 mg once weekly (oral) — take every [WEEKDAY]
+- Folic acid 5 mg once weekly (the day after Methotrexate)
+- Hydroxychloroquine 200 mg twice daily
+- Naproxen 500 mg twice daily with food (as needed for flares)
+
+PLAN:
+1. Continue current DMARD combination.
+2. If inadequate response at next review, consider adding a biologic agent (anti-TNF therapy).
+
+METHOTREXATE MONITORING:
+Methotrexate can affect the liver and blood counts. Blood tests (FBC, LFT, U&E) must be performed every 8 weeks. Do NOT skip blood tests. If your GP contacts you about abnormal results, stop Methotrexate and contact the rheumatology helpline immediately.
+
+IMPORTANT SAFETY INFORMATION FOR METHOTREXATE:
+- Take Methotrexate ONCE A WEEK only. Taking it daily is life-threatening.
+- Take Folic acid every week to reduce side effects.
+- Do NOT take trimethoprim or co-trimoxazole antibiotics — they interact dangerously with Methotrexate.
+- Avoid alcohol entirely or limit to very small amounts.
+- Use reliable contraception — Methotrexate causes serious birth defects. Discuss with your doctor before planning a pregnancy.
+- Carry your Methotrexate alert card at all times.
+
+WARNING SIGNS — SEEK URGENT ATTENTION:
+- Mouth ulcers, severe sore throat, fever, unusual bruising, or persistent cough — these may indicate serious blood or lung side effects.
+
+FOLLOW-UP:
+Rheumatology in 4 months with updated DAS28.

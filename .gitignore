@@ -1,0 +1,93 @@
+# ==============================================================================
+# Git Ignore Rules — Clinical RAG Simplification
+# Prevents leaking sensitive keys, clinical data, vector stores, and build artifacts
+# ==============================================================================
+
+# ── Environment & Secrets ─────────────────────────────────────────────────────
+# Ignore all real environment files and credentials
+.env
+.env.*
+.env.local
+.env.development
+.env.production
+!.env.example
+
+# Private keys, certificates, API tokens
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+*credentials*.json
+service_account*.json
+
+# ── Vector Store & Heavy ML Artifacts ─────────────────────────────────────────
+# FAISS binary index and metadata containing full embedded text
+vector_store/
+*.bin
+*.index
+
+# ── Pipeline & Evaluation Outputs ─────────────────────────────────────────────
+# Do not commit generated simplification outputs or evaluation test runs
+rag_output.json
+test_save.json
+output.json
+evaluation/results/
+evaluation/**/*.csv
+*.csv
+
+# ── Python / Cache Artifacts ──────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ── Virtual Environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ── Testing & Linters ─────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+
+# ── Logs & Debugging ──────────────────────────────────────────────────────────
+*.log
+logs/
+*.out
+
+# ── IDEs & Operating System ───────────────────────────────────────────────────
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
