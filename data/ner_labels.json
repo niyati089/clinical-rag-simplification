@@ -1,0 +1,404 @@
+[
+  {
+    "text": "Patient presents with type 2 diabetes mellitus and hypertension. Blood glucose is 180 mg/dL and BP is 150/95 mmHg.",
+    "entities": [
+      {"text": "type 2 diabetes mellitus", "type": "DISEASE", "start": 21, "end": 45},
+      {"text": "hypertension", "type": "DISEASE", "start": 50, "end": 62},
+      {"text": "180 mg/dL", "type": "LAB_VALUE", "start": 84, "end": 93},
+      {"text": "150/95 mmHg", "type": "LAB_VALUE", "start": 104, "end": 115}
+    ]
+  },
+  {
+    "text": "Prescribe metformin 500 mg twice daily and lisinopril 10 mg once daily for cardiovascular protection.",
+    "entities": [
+      {"text": "metformin", "type": "DRUG", "start": 10, "end": 19},
+      {"text": "500 mg", "type": "LAB_VALUE", "start": 20, "end": 26},
+      {"text": "lisinopril", "type": "DRUG", "start": 44, "end": 54},
+      {"text": "10 mg", "type": "LAB_VALUE", "start": 55, "end": 60}
+    ]
+  },
+  {
+    "text": "The patient underwent cardiac catheterization to evaluate coronary artery disease. The procedure was successful.",
+    "entities": [
+      {"text": "cardiac catheterization", "type": "PROCEDURE", "start": 22, "end": 45},
+      {"text": "coronary artery disease", "type": "DISEASE", "start": 58, "end": 81}
+    ]
+  },
+  {
+    "text": "HbA1c is 8.5% which indicates poor glycemic control. The patient needs insulin therapy.",
+    "entities": [
+      {"text": "HbA1c", "type": "ABBREVIATION", "start": 0, "end": 5},
+      {"text": "8.5%", "type": "LAB_VALUE", "start": 9, "end": 13},
+      {"text": "insulin", "type": "DRUG", "start": 69, "end": 76}
+    ]
+  },
+  {
+    "text": "Temperature is 101.2°F, heart rate 98 bpm, and oxygen saturation 92%.",
+    "entities": [
+      {"text": "101.2°F", "type": "LAB_VALUE", "start": 15, "end": 22},
+      {"text": "98 bpm", "type": "LAB_VALUE", "start": 35, "end": 41},
+      {"text": "92%", "type": "LAB_VALUE", "start": 66, "end": 69}
+    ]
+  },
+  {
+    "text": "The patient has chronic obstructive pulmonary disease (COPD) and requires bronchodilator therapy.",
+    "entities": [
+      {"text": "chronic obstructive pulmonary disease", "type": "DISEASE", "start": 16, "end": 53},
+      {"text": "COPD", "type": "ABBREVIATION", "start": 55, "end": 59},
+      {"text": "bronchodilator therapy", "type": "PROCEDURE", "start": 75, "end": 97}
+    ]
+  },
+  {
+    "text": "Start atorvastatin 20 mg daily for hypercholesterolemia. Monitor liver function tests.",
+    "entities": [
+      {"text": "atorvastatin", "type": "DRUG", "start": 6, "end": 18},
+      {"text": "20 mg", "type": "LAB_VALUE", "start": 19, "end": 24},
+      {"text": "hypercholesterolemia", "type": "DISEASE", "start": 35, "end": 55},
+      {"text": "liver function tests", "type": "PROCEDURE", "start": 65, "end": 85}
+    ]
+  },
+  {
+    "text": "White blood cell count is 12,000 WBC and hemoglobin is 11.5 g/dL.",
+    "entities": [
+      {"text": "White blood cell count", "type": "PROCEDURE", "start": 0, "end": 22},
+      {"text": "12,000 WBC", "type": "LAB_VALUE", "start": 26, "end": 36},
+      {"text": "hemoglobin", "type": "LAB_VALUE", "start": 41, "end": 51},
+      {"text": "11.5 g/dL", "type": "LAB_VALUE", "start": 55, "end": 64}
+    ]
+  },
+  {
+    "text": "Patient diagnosed with myocardial infarction (MI). ECG shows ST elevation.",
+    "entities": [
+      {"text": "myocardial infarction", "type": "DISEASE", "start": 23, "end": 44},
+      {"text": "MI", "type": "ABBREVIATION", "start": 46, "end": 48},
+      {"text": "ECG", "type": "ABBREVIATION", "start": 51, "end": 54}
+    ]
+  },
+  {
+    "text": "Administer morphine 2 mg IV for pain control and aspirin 81 mg for antiplatelet therapy.",
+    "entities": [
+      {"text": "morphine", "type": "DRUG", "start": 11, "end": 19},
+      {"text": "2 mg", "type": "LAB_VALUE", "start": 20, "end": 24},
+      {"text": "aspirin", "type": "DRUG", "start": 50, "end": 57},
+      {"text": "81 mg", "type": "LAB_VALUE", "start": 58, "end": 63}
+    ]
+  },
+  {
+    "text": "The patient presents with pneumonia and sepsis. CRP is elevated at 15.2 mg/L.",
+    "entities": [
+      {"text": "pneumonia", "type": "DISEASE", "start": 26, "end": 35},
+      {"text": "sepsis", "type": "DISEASE", "start": 40, "end": 46},
+      {"text": "CRP", "type": "ABBREVIATION", "start": 48, "end": 51},
+      {"text": "15.2 mg/L", "type": "LAB_VALUE", "start": 69, "end": 78}
+    ]
+  },
+  {
+    "text": "Schedule colonoscopy for colorectal cancer screening. Patient should fast 12 hours before.",
+    "entities": [
+      {"text": "colonoscopy", "type": "PROCEDURE", "start": 9, "end": 20},
+      {"text": "colorectal cancer", "type": "DISEASE", "start": 25, "end": 42}
+    ]
+  },
+  {
+    "text": "Creatinine level is 2.1 mg/dL indicating kidney dysfunction. Adjust medication doses.",
+    "entities": [
+      {"text": "Creatinine", "type": "LAB_VALUE", "start": 0, "end": 10},
+      {"text": "2.1 mg/dL", "type": "LAB_VALUE", "start": 20, "end": 29},
+      {"text": "kidney dysfunction", "type": "DISEASE", "start": 41, "end": 59}
+    ]
+  },
+  {
+    "text": "Patient has atrial fibrillation (AF) and takes warfarin 5 mg daily for anticoagulation.",
+    "entities": [
+      {"text": "atrial fibrillation", "type": "DISEASE", "start": 12, "end": 31},
+      {"text": "AF", "type": "ABBREVIATION", "start": 33, "end": 35},
+      {"text": "warfarin", "type": "DRUG", "start": 47, "end": 55},
+      {"text": "5 mg", "type": "LAB_VALUE", "start": 56, "end": 60}
+    ]
+  },
+  {
+    "text": "Blood pressure medications include amlodipine 5 mg and metoprolol 25 mg twice daily.",
+    "entities": [
+      {"text": "amlodipine", "type": "DRUG", "start": 35, "end": 45},
+      {"text": "5 mg", "type": "LAB_VALUE", "start": 46, "end": 50},
+      {"text": "metoprolol", "type": "DRUG", "start": 55, "end": 65},
+      {"text": "25 mg", "type": "LAB_VALUE", "start": 66, "end": 71}
+    ]
+  },
+  {
+    "text": "MRI of the brain shows no acute stroke. Patient stable with BP 140/90.",
+    "entities": [
+      {"text": "MRI", "type": "ABBREVIATION", "start": 0, "end": 3},
+      {"text": "stroke", "type": "DISEASE", "start": 35, "end": 41},
+      {"text": "BP", "type": "ABBREVIATION", "start": 61, "end": 63},
+      {"text": "140/90", "type": "LAB_VALUE", "start": 64, "end": 70}
+    ]
+  },
+  {
+    "text": "Patient underwent hip replacement surgery due to severe osteoarthritis.",
+    "entities": [
+      {"text": "hip replacement surgery", "type": "PROCEDURE", "start": 18, "end": 41},
+      {"text": "osteoarthritis", "type": "DISEASE", "start": 57, "end": 71}
+    ]
+  },
+  {
+    "text": "CBC shows anemia with hemoglobin 9.2 g/dL. Start iron supplements 325 mg daily.",
+    "entities": [
+      {"text": "CBC", "type": "ABBREVIATION", "start": 0, "end": 3},
+      {"text": "anemia", "type": "DISEASE", "start": 10, "end": 16},
+      {"text": "9.2 g/dL", "type": "LAB_VALUE", "start": 32, "end": 40},
+      {"text": "iron supplements", "type": "DRUG", "start": 48, "end": 64},
+      {"text": "325 mg", "type": "LAB_VALUE", "start": 65, "end": 71}
+    ]
+  },
+  {
+    "text": "Patient diagnosed with gastroesophageal reflux disease (GERD). Prescribe omeprazole 20 mg.",
+    "entities": [
+      {"text": "gastroesophageal reflux disease", "type": "DISEASE", "start": 23, "end": 54},
+      {"text": "GERD", "type": "ABBREVIATION", "start": 56, "end": 60},
+      {"text": "omeprazole", "type": "DRUG", "start": 73, "end": 83},
+      {"text": "20 mg", "type": "LAB_VALUE", "start": 84, "end": 89}
+    ]
+  },
+  {
+    "text": "Thyroid function tests show TSH 8.2 mIU/L and T4 2.1 mcg/dL. Start levothyroxine therapy.",
+    "entities": [
+      {"text": "Thyroid function tests", "type": "PROCEDURE", "start": 0, "end": 22},
+      {"text": "TSH", "type": "ABBREVIATION", "start": 28, "end": 31},
+      {"text": "8.2 mIU/L", "type": "LAB_VALUE", "start": 32, "end": 41},
+      {"text": "T4", "type": "ABBREVIATION", "start": 46, "end": 48},
+      {"text": "2.1 mcg/dL", "type": "LAB_VALUE", "start": 49, "end": 59},
+      {"text": "levothyroxine", "type": "DRUG", "start": 67, "end": 80}
+    ]
+  },
+  {
+    "text": "Patient has chronic kidney disease (CKD) stage 3. eGFR is 45 mL/min/1.73m².",
+    "entities": [
+      {"text": "chronic kidney disease", "type": "DISEASE", "start": 12, "end": 34},
+      {"text": "CKD", "type": "ABBREVIATION", "start": 36, "end": 39},
+      {"text": "eGFR", "type": "ABBREVIATION", "start": 51, "end": 55},
+      {"text": "45 mL/min/1.73m²", "type": "LAB_VALUE", "start": 59, "end": 75}
+    ]
+  },
+  {
+    "text": "Physical therapy recommended for rehabilitation after total knee replacement.",
+    "entities": [
+      {"text": "Physical therapy", "type": "PROCEDURE", "start": 0, "end": 16},
+      {"text": "total knee replacement", "type": "PROCEDURE", "start": 54, "end": 76}
+    ]
+  },
+  {
+    "text": "Patient has deep vein thrombosis (DVT) in left leg. Start heparin infusion at 18 units/kg/hr.",
+    "entities": [
+      {"text": "deep vein thrombosis", "type": "DISEASE", "start": 12, "end": 32},
+      {"text": "DVT", "type": "ABBREVIATION", "start": 34, "end": 37},
+      {"text": "heparin", "type": "DRUG", "start": 59, "end": 66},
+      {"text": "18 units/kg/hr", "type": "LAB_VALUE", "start": 80, "end": 94}
+    ]
+  },
+  {
+    "text": "Chest X-ray shows pneumothorax. Insert chest tube for drainage.",
+    "entities": [
+      {"text": "Chest X-ray", "type": "PROCEDURE", "start": 0, "end": 11},
+      {"text": "pneumothorax", "type": "DISEASE", "start": 18, "end": 30},
+      {"text": "chest tube", "type": "PROCEDURE", "start": 39, "end": 49}
+    ]
+  },
+  {
+    "text": "Patient presents with acute myocardial infarction. Troponin I is 12.5 ng/mL.",
+    "entities": [
+      {"text": "acute myocardial infarction", "type": "DISEASE", "start": 22, "end": 49},
+      {"text": "Troponin I", "type": "LAB_VALUE", "start": 51, "end": 61},
+      {"text": "12.5 ng/mL", "type": "LAB_VALUE", "start": 65, "end": 75}
+    ]
+  },
+  {
+    "text": "Schedule echocardiogram to assess left ventricular ejection fraction (LVEF).",
+    "entities": [
+      {"text": "echocardiogram", "type": "PROCEDURE", "start": 9, "end": 23},
+      {"text": "left ventricular ejection fraction", "type": "PROCEDURE", "start": 34, "end": 68},
+      {"text": "LVEF", "type": "ABBREVIATION", "start": 70, "end": 74}
+    ]
+  },
+  {
+    "text": "Patient has diabetes with HbA1c of 10.2%. Increase insulin dose to 15 units.",
+    "entities": [
+      {"text": "diabetes", "type": "DISEASE", "start": 12, "end": 20},
+      {"text": "HbA1c", "type": "ABBREVIATION", "start": 26, "end": 31},
+      {"text": "10.2%", "type": "LAB_VALUE", "start": 35, "end": 40},
+      {"text": "insulin", "type": "DRUG", "start": 50, "end": 57},
+      {"text": "15 units", "type": "LAB_VALUE", "start": 66, "end": 74}
+    ]
+  },
+  {
+    "text": "Lumbar puncture performed to rule out meningitis. CSF analysis pending.",
+    "entities": [
+      {"text": "Lumbar puncture", "type": "PROCEDURE", "start": 0, "end": 15},
+      {"text": "meningitis", "type": "DISEASE", "start": 39, "end": 49},
+      {"text": "CSF", "type": "ABBREVIATION", "start": 51, "end": 54}
+    ]
+  },
+  {
+    "text": "Patient diagnosed with pneumonia. Start azithromycin 250 mg daily for 5 days.",
+    "entities": [
+      {"text": "pneumonia", "type": "DISEASE", "start": 23, "end": 32},
+      {"text": "azithromycin", "type": "DRUG", "start": 40, "end": 52},
+      {"text": "250 mg", "type": "LAB_VALUE", "start": 53, "end": 59}
+    ]
+  },
+  {
+    "text": "CT scan of abdomen reveals appendicitis. Emergency appendectomy required.",
+    "entities": [
+      {"text": "CT scan", "type": "PROCEDURE", "start": 0, "end": 7},
+      {"text": "appendicitis", "type": "DISEASE", "start": 27, "end": 39},
+      {"text": "appendectomy", "type": "PROCEDURE", "start": 51, "end": 63}
+    ]
+  },
+  {
+    "text": "Potassium level is 3.1 mEq/L which is below normal. Give potassium supplement 40 mEq.",
+    "entities": [
+      {"text": "Potassium", "type": "LAB_VALUE", "start": 0, "end": 9},
+      {"text": "3.1 mEq/L", "type": "LAB_VALUE", "start": 19, "end": 28},
+      {"text": "potassium supplement", "type": "DRUG", "start": 58, "end": 78},
+      {"text": "40 mEq", "type": "LAB_VALUE", "start": 79, "end": 85}
+    ]
+  },
+  {
+    "text": "Patient has congestive heart failure (CHF) with ejection fraction 35%. Start ACE inhibitor.",
+    "entities": [
+      {"text": "congestive heart failure", "type": "DISEASE", "start": 12, "end": 36},
+      {"text": "CHF", "type": "ABBREVIATION", "start": 38, "end": 41},
+      {"text": "ejection fraction", "type": "PROCEDURE", "start": 48, "end": 65},
+      {"text": "35%", "type": "LAB_VALUE", "start": 66, "end": 69},
+      {"text": "ACE inhibitor", "type": "DRUG", "start": 77, "end": 90}
+    ]
+  },
+  {
+    "text": "Mammography screening shows suspicious lesion. Schedule breast biopsy for further evaluation.",
+    "entities": [
+      {"text": "Mammography", "type": "PROCEDURE", "start": 0, "end": 11},
+      {"text": "breast biopsy", "type": "PROCEDURE", "start": 56, "end": 69}
+    ]
+  },
+  {
+    "text": "Patient presents with severe asthma exacerbation. Administer albuterol 2.5 mg via nebulizer.",
+    "entities": [
+      {"text": "asthma exacerbation", "type": "DISEASE", "start": 29, "end": 48},
+      {"text": "albuterol", "type": "DRUG", "start": 61, "end": 70},
+      {"text": "2.5 mg", "type": "LAB_VALUE", "start": 71, "end": 77}
+    ]
+  },
+  {
+    "text": "Liver enzymes elevated: ALT 85 IU/L, AST 92 IU/L. Monitor for hepatotoxicity.",
+    "entities": [
+      {"text": "Liver enzymes", "type": "LAB_VALUE", "start": 0, "end": 13},
+      {"text": "ALT", "type": "ABBREVIATION", "start": 24, "end": 27},
+      {"text": "85 IU/L", "type": "LAB_VALUE", "start": 28, "end": 35},
+      {"text": "AST", "type": "ABBREVIATION", "start": 37, "end": 40},
+      {"text": "92 IU/L", "type": "LAB_VALUE", "start": 41, "end": 48},
+      {"text": "hepatotoxicity", "type": "DISEASE", "start": 63, "end": 77}
+    ]
+  },
+  {
+    "text": "Patient has hyperlipidemia. Total cholesterol is 285 mg/dL and LDL is 190 mg/dL.",
+    "entities": [
+      {"text": "hyperlipidemia", "type": "DISEASE", "start": 12, "end": 26},
+      {"text": "Total cholesterol", "type": "LAB_VALUE", "start": 28, "end": 45},
+      {"text": "285 mg/dL", "type": "LAB_VALUE", "start": 49, "end": 58},
+      {"text": "LDL", "type": "ABBREVIATION", "start": 63, "end": 66},
+      {"text": "190 mg/dL", "type": "LAB_VALUE", "start": 70, "end": 79}
+    ]
+  },
+  {
+    "text": "Urinalysis shows proteinuria with 2+ protein. Follow up with nephrology.",
+    "entities": [
+      {"text": "Urinalysis", "type": "PROCEDURE", "start": 0, "end": 10},
+      {"text": "proteinuria", "type": "DISEASE", "start": 17, "end": 28},
+      {"text": "nephrology", "type": "PROCEDURE", "start": 62, "end": 72}
+    ]
+  },
+  {
+    "text": "Patient scheduled for cataract surgery next week. Pre-operative clearance obtained.",
+    "entities": [
+      {"text": "cataract surgery", "type": "PROCEDURE", "start": 22, "end": 38}
+    ]
+  },
+  {
+    "text": "Blood glucose monitoring shows values ranging from 180-250 mg/dL. Adjust insulin regimen.",
+    "entities": [
+      {"text": "Blood glucose monitoring", "type": "PROCEDURE", "start": 0, "end": 24},
+      {"text": "180-250 mg/dL", "type": "LAB_VALUE", "start": 51, "end": 64},
+      {"text": "insulin", "type": "DRUG", "start": 73, "end": 80}
+    ]
+  },
+  {
+    "text": "Patient has rheumatoid arthritis (RA) and takes methotrexate 15 mg weekly.",
+    "entities": [
+      {"text": "rheumatoid arthritis", "type": "DISEASE", "start": 12, "end": 32},
+      {"text": "RA", "type": "ABBREVIATION", "start": 34, "end": 36},
+      {"text": "methotrexate", "type": "DRUG", "start": 48, "end": 60},
+      {"text": "15 mg", "type": "LAB_VALUE", "start": 61, "end": 66}
+    ]
+  },
+  {
+    "text": "Bone density scan shows osteoporosis. Recommend calcium 1200 mg and vitamin D 2000 IU daily.",
+    "entities": [
+      {"text": "Bone density scan", "type": "PROCEDURE", "start": 0, "end": 17},
+      {"text": "osteoporosis", "type": "DISEASE", "start": 24, "end": 36},
+      {"text": "calcium", "type": "DRUG", "start": 48, "end": 55},
+      {"text": "1200 mg", "type": "LAB_VALUE", "start": 56, "end": 63},
+      {"text": "vitamin D", "type": "DRUG", "start": 68, "end": 77},
+      {"text": "2000 IU", "type": "LAB_VALUE", "start": 78, "end": 85}
+    ]
+  },
+  {
+    "text": "EKG shows atrial flutter with RVR. Heart rate 145 bpm. Start diltiazem drip.",
+    "entities": [
+      {"text": "EKG", "type": "ABBREVIATION", "start": 0, "end": 3},
+      {"text": "atrial flutter", "type": "DISEASE", "start": 10, "end": 24},
+      {"text": "RVR", "type": "ABBREVIATION", "start": 30, "end": 33},
+      {"text": "145 bpm", "type": "LAB_VALUE", "start": 46, "end": 53},
+      {"text": "diltiazem", "type": "DRUG", "start": 61, "end": 70}
+    ]
+  },
+  {
+    "text": "Patient diagnosed with peptic ulcer disease. Start proton pump inhibitor therapy.",
+    "entities": [
+      {"text": "peptic ulcer disease", "type": "DISEASE", "start": 23, "end": 43},
+      {"text": "proton pump inhibitor", "type": "DRUG", "start": 51, "end": 72}
+    ]
+  },
+  {
+    "text": "Pulmonary function tests show FEV1 65% predicted. Diagnosis: moderate COPD.",
+    "entities": [
+      {"text": "Pulmonary function tests", "type": "PROCEDURE", "start": 0, "end": 24},
+      {"text": "FEV1", "type": "ABBREVIATION", "start": 30, "end": 34},
+      {"text": "65%", "type": "LAB_VALUE", "start": 35, "end": 38},
+      {"text": "COPD", "type": "ABBREVIATION", "start": 71, "end": 75}
+    ]
+  },
+  {
+    "text": "Patient has sleep apnea and uses CPAP machine nightly. Compliance good at 90%.",
+    "entities": [
+      {"text": "sleep apnea", "type": "DISEASE", "start": 12, "end": 23},
+      {"text": "CPAP", "type": "ABBREVIATION", "start": 33, "end": 37},
+      {"text": "90%", "type": "LAB_VALUE", "start": 75, "end": 78}
+    ]
+  },
+  {
+    "text": "Vitamin B12 level is 150 pg/mL which is low. Start cyanocobalamin 1000 mcg injections.",
+    "entities": [
+      {"text": "Vitamin B12", "type": "LAB_VALUE", "start": 0, "end": 11},
+      {"text": "150 pg/mL", "type": "LAB_VALUE", "start": 21, "end": 30},
+      {"text": "cyanocobalamin", "type": "DRUG", "start": 52, "end": 66},
+      {"text": "1000 mcg", "type": "LAB_VALUE", "start": 67, "end": 75}
+    ]
+  },
+  {
+    "text": "Patient scheduled for colonoscopy prep. Take polyethylene glycol solution the night before.",
+    "entities": [
+      {"text": "colonoscopy", "type": "PROCEDURE", "start": 22, "end": 33},
+      {"text": "polyethylene glycol", "type": "DRUG", "start": 45, "end": 64}
+    ]
+  }
+]

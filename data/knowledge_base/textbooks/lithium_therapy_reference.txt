@@ -1,0 +1,64 @@
+LITHIUM THERAPY — CLINICAL REFERENCE
+
+INDICATIONS
+- Bipolar affective disorder (mania, depression, maintenance)
+- Augmentation of antidepressants in treatment-resistant depression
+- Prophylaxis of recurrent unipolar depression
+
+MECHANISM
+Lithium's exact mechanism is not fully understood. It is believed to modulate intracellular signalling pathways, including inositol phosphate and protein kinase C pathways, and may enhance serotonergic transmission.
+
+DOSING AND THERAPEUTIC MONITORING
+- Lithium has a narrow therapeutic index — small changes in dose or fluid balance can cause toxicity
+- Therapeutic serum levels:
+  * Acute mania: 0.8–1.0 mmol/L
+  * Maintenance (long-term prophylaxis): 0.6–0.8 mmol/L
+  * Older adults: 0.4–0.7 mmol/L (lower due to reduced renal clearance)
+- Blood sampling: 12 hours after last dose (trough level)
+- Frequency: Weekly until stable, then every 3 months
+- Concomitant monitoring: Renal function (eGFR, creatinine), thyroid function (TSH), calcium — every 6 months
+
+FACTORS THAT RAISE LITHIUM LEVELS (and risk of toxicity):
+- Dehydration (diarrhoea, vomiting, fever, heat, exercise without adequate fluid intake)
+- Low-sodium diet (sodium depletion causes lithium retention by kidneys)
+- Drug interactions (see below)
+- Renal impairment
+
+DRUG INTERACTIONS
+- NSAIDs (ibuprofen, naproxen, diclofenac): Reduce renal lithium clearance → raise levels → toxicity risk
+- ACE inhibitors and ARBs: Increase lithium levels; monitor closely when starting/adjusting
+- Diuretics (thiazides): Reduce lithium excretion → toxicity; loop diuretics generally safer
+- Haloperidol and other antipsychotics: Increased neurotoxicity risk at higher levels
+
+LITHIUM TOXICITY
+Mild (1.5–2.0 mmol/L):
+- Coarse tremor, nausea, diarrhoea, drowsiness, muscle weakness
+
+Moderate (2.0–2.5 mmol/L):
+- Confusion, slurred speech, ataxia (unsteady gait), prolonged QT on ECG
+
+Severe (>2.5 mmol/L) — MEDICAL EMERGENCY:
+- Seizures, coma, cardiac arrhythmias, renal failure, permanent neurological damage possible
+
+Management of toxicity:
+- Stop lithium
+- IV hydration with normal saline
+- Haemodialysis for severe toxicity
+- Urgent toxicology/nephrology consultation
+
+PATIENT COUNSELLING
+- Take lithium at the same time each day (usually night)
+- Drink adequate fluids (1.5–2 L/day in normal conditions; more in hot weather or exercise)
+- Avoid drastic changes to salt intake
+- Carry a lithium alert card
+- Report symptoms of toxicity immediately: coarse tremor, confusion, slurred speech, unsteady walking
+- Sick day rules: If vomiting or unable to keep fluids down, seek medical advice; may need dose withholding and IV fluids
+
+EFFECTS ON THYROID AND KIDNEYS
+- Hypothyroidism: Lithium can cause thyroid enlargement and hypothyroidism (15–40% incidence with long-term use); monitor TSH regularly
+- Renal: Long-term use can cause nephrogenic diabetes insipidus (polyuria) and, rarely, chronic kidney disease; monitor eGFR
+
+TERATOGENICITY
+- Lithium is associated with cardiac malformations (Ebstein's anomaly) in the first trimester
+- Discuss pregnancy planning with psychiatry team; risk-benefit must be carefully assessed
+- If continued in pregnancy, switch to multiple smaller doses and monitor levels more frequently

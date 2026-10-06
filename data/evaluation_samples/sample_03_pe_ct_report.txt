@@ -1,0 +1,29 @@
+RADIOLOGY REPORT — CHEST CT WITH CONTRAST
+
+Patient: [REDACTED] | DOB: [REDACTED]
+Requesting Clinician: [REDACTED]
+Study Date: [DATE]
+
+INDICATION:
+Progressive dyspnoea, right-sided pleuritic chest pain, recent long-haul flight.
+Clinical suspicion of pulmonary embolism.
+
+TECHNIQUE:
+CT pulmonary angiography (CTPA) performed following intravenous contrast administration.
+
+FINDINGS:
+Filling defects are present within the right main pulmonary artery and extending into the right lower lobe segmental branches, consistent with acute pulmonary embolism. No evidence of right heart strain on this study.
+
+Bilateral small pleural effusions are noted, left greater than right.
+Mild bibasal atelectasis.
+No evidence of consolidation or pneumothorax.
+
+IMPRESSION:
+1. Acute bilateral pulmonary embolism, predominantly right-sided.
+2. Bilateral small pleural effusions.
+3. Bibasal atelectasis.
+
+RECOMMENDATION:
+Urgent correlation with clinical team. Anticoagulation therapy should be initiated as appropriate per local protocol. Right heart function and haemodynamic status should be assessed clinically. Consider echocardiography if right heart strain is suspected.
+
+This report was reviewed and authorised by: [Radiologist Name, Registration Number]

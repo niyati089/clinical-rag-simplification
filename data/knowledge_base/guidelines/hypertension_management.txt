@@ -1,0 +1,43 @@
+HYPERTENSION MANAGEMENT — CLINICAL GUIDELINE SUMMARY
+
+DEFINITION AND CLASSIFICATION
+Hypertension is defined as a persistent elevated blood pressure ≥ 140/90 mmHg in clinic settings (≥ 135/85 mmHg on ambulatory monitoring).
+
+Classification:
+- Stage 1: Clinic BP ≥ 140/90 mmHg; ABPM daytime ≥ 135/85 mmHg
+- Stage 2: Clinic BP ≥ 160/100 mmHg; ABPM daytime ≥ 150/95 mmHg
+- Severe: Clinic systolic ≥ 180 mmHg or diastolic ≥ 110 mmHg
+
+TREATMENT TARGETS
+- General population under 80 years: <140/90 mmHg in clinic
+- Patients with diabetes or CKD: <130/80 mmHg
+- Age ≥ 80 years: systolic 130–150 mmHg if tolerated
+
+LIFESTYLE MODIFICATIONS
+Recommended for all patients:
+- Reduce dietary sodium: target <6 g/day (less than 1 teaspoon of salt)
+- DASH diet: high in fruits, vegetables, whole grains, low-fat dairy
+- Regular aerobic exercise: ≥30 minutes, ≥5 days/week
+- Reduce alcohol consumption to ≤14 units/week for women, ≤21 for men
+- Smoking cessation
+- Weight reduction in overweight/obese patients (each 1 kg weight loss reduces systolic BP by ~1 mmHg)
+
+PHARMACOLOGICAL THERAPY — STEP-BY-STEP
+Step 1: ACE inhibitor (e.g., Ramipril) or ARB (e.g., Losartan) for patients with diabetes or CKD
+         OR calcium channel blocker (e.g., Amlodipine) for all others
+Step 2: Combine CCB + ACE inhibitor/ARB
+Step 3: Add thiazide-like diuretic (e.g., Indapamide)
+Step 4: Consider adding spironolactone (low-dose) or alpha/beta-blocker
+
+MONITORING
+- Blood pressure: at every GP visit and via home monitoring (2 readings, morning and evening, for 7 days)
+- Renal function and electrolytes: annually; more frequently in CKD or when adding/changing diuretics or RAS blockers
+- Potassium: especially important with ACE inhibitors/ARBs and potassium-sparing diuretics
+
+DRUGS TO AVOID
+- NSAIDs (ibuprofen, naproxen, diclofenac): raise blood pressure and reduce efficacy of antihypertensives; worsen renal function, especially in CKD
+- Licorice root supplements: raise blood pressure
+- Combined oral contraceptives: may elevate blood pressure; discuss alternatives
+
+HYPERTENSIVE URGENCY/EMERGENCY
+- Severe hypertension (≥180/110 mmHg) with signs of end-organ damage (chest pain, neurological symptoms, visual disturbance) is a medical emergency — call emergency services immediately.

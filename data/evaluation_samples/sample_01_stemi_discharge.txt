@@ -1,0 +1,32 @@
+PATIENT DISCHARGE SUMMARY — ACUTE MYOCARDIAL INFARCTION
+
+Patient: [REDACTED] | DOB: [REDACTED] | MRN: [REDACTED]
+Admission Date: [DATE] | Discharge Date: [DATE]
+Attending Physician: [REDACTED]
+
+DIAGNOSIS:
+Acute ST-Elevation Myocardial Infarction (STEMI), anterior wall
+Killip Class II
+
+PROCEDURES PERFORMED:
+Emergency percutaneous coronary intervention (PCI) with drug-eluting stent placement in the left anterior descending (LAD) artery.
+
+MEDICATIONS AT DISCHARGE:
+1. Aspirin 75 mg once daily — continue indefinitely
+2. Ticagrelor 90 mg twice daily — continue for 12 months; do NOT stop without consulting your cardiologist
+3. Atorvastatin 80 mg once daily at night
+4. Metoprolol succinate 50 mg once daily
+5. Ramipril 2.5 mg once daily — to be titrated by GP
+6. Pantoprazole 40 mg once daily
+
+IMPORTANT INSTRUCTIONS:
+- Do NOT miss any dose of Ticagrelor. Stopping this medication early significantly increases the risk of stent thrombosis (a life-threatening blockage of the stent).
+- Avoid non-steroidal anti-inflammatory drugs (NSAIDs) such as ibuprofen.
+- No heavy lifting for 4 weeks.
+- No driving for at least 4 weeks or as advised by your doctor.
+- Report any chest pain, shortness of breath, or palpitations immediately to the emergency department.
+
+FOLLOW-UP:
+Cardiology outpatient clinic in 4 weeks.
+GP review in 2 weeks for blood pressure and renal function check.
+Cardiac rehabilitation programme referral — you will receive a separate appointment.

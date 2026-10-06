@@ -1,0 +1,41 @@
+ONCOLOGY TREATMENT PLAN — BREAST CANCER
+
+Patient: [REDACTED]
+Diagnosis: Invasive ductal carcinoma, right breast, Grade 2, pT1cN0M0 (Stage IA)
+Receptor Status: ER+, PR+, HER2-negative
+Multidisciplinary Team (MDT) Decision Date: [DATE]
+
+TREATMENT PLAN:
+Following MDT discussion, the recommended treatment plan is:
+
+1. SURGERY (Completed):
+   Right wide local excision and sentinel lymph node biopsy — completed [DATE]. Margins clear. Sentinel node negative.
+
+2. RADIOTHERAPY:
+   Adjuvant whole-breast radiotherapy to the right breast. 
+   Schedule: 15 fractions over 3 weeks.
+   To commence within 4–6 weeks of surgery.
+
+3. ADJUVANT ENDOCRINE THERAPY:
+   Tamoxifen 20 mg once daily — to be taken for 5–10 years.
+   Important: Do not stop Tamoxifen without discussing with your oncologist.
+
+SIDE EFFECTS OF TAMOXIFEN TO REPORT:
+- Unusual vaginal bleeding
+- Sudden shortness of breath or leg swelling (risk of blood clots)
+- Vision changes
+- Severe mood changes
+
+SIDE EFFECTS OF RADIOTHERAPY (EXPECTED):
+- Skin redness and soreness in the treated area (usually temporary)
+- Fatigue (usually improves after treatment ends)
+
+IMPORTANT:
+- Inform any treating doctor that you are on Tamoxifen before any procedures.
+- Avoid pregnancy during treatment — Tamoxifen is harmful to a developing baby.
+- Use reliable contraception.
+
+FOLLOW-UP:
+Oncology review 4 weeks after radiotherapy completion.
+Annual mammogram of the right breast.
+Bone density scan (DEXA) if entering menopause while on Tamoxifen.

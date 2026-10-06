@@ -1,0 +1,35 @@
+HYPERTENSION MANAGEMENT CLINIC LETTER
+
+Patient: [REDACTED] | Date: [DATE]
+Referring GP: [REDACTED]
+
+BACKGROUND:
+This patient was referred for specialist assessment of difficult-to-control hypertension. They are a 58-year-old with a 10-year history of essential hypertension, type 2 diabetes, and stage 3 CKD (eGFR 48 mL/min/1.73m²).
+
+BLOOD PRESSURE READINGS TODAY:
+Seated: 162/96 mmHg (right arm), 158/94 mmHg (left arm)
+Target: <130/80 mmHg (based on diabetes/CKD risk profile)
+
+CURRENT MEDICATIONS:
+- Amlodipine 10 mg once daily
+- Losartan 100 mg once daily
+- Bisoprolol 5 mg once daily
+
+PLAN:
+1. Add Indapamide 1.5 mg modified-release once daily.
+2. Reinforce dietary salt restriction — target <6 g/day.
+3. Lifestyle counselling: increase physical activity, reduce alcohol intake.
+4. Recheck renal function (eGFR, potassium) in 4 weeks following medication change — ARB + diuretic combination can affect kidney function.
+
+WARNINGS:
+- Monitor for dizziness or lightheadedness (postural hypotension) when standing, especially in the first 2 weeks.
+- If blood potassium rises significantly (hyperkalaemia), Losartan may need dose adjustment.
+- Continue daily blood pressure home monitoring and record readings in the logbook.
+
+DO NOT:
+- Do not use ibuprofen or other NSAIDs — they raise blood pressure and can worsen kidney function.
+- Do not add any herbal supplements (e.g., liquorice root) without checking with your doctor.
+
+FOLLOW-UP:
+GP in 4 weeks for renal function check and blood pressure review.
+Hypertension clinic in 3 months.

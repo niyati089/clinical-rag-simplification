@@ -1,0 +1,66 @@
+ASTHMA MANAGEMENT — PATIENT AND CLINICIAN REFERENCE
+
+DEFINITION
+Asthma is a chronic inflammatory disorder of the airways characterised by variable and recurring symptoms of wheezing, breathlessness, chest tightness, and coughing, particularly at night or early morning.
+
+DIAGNOSIS
+- Characteristic symptoms (wheeze, cough, dyspnoea, chest tightness)
+- Variable expiratory airflow limitation on spirometry (FEV1/FVC ratio <0.7, with reversibility after bronchodilator)
+- FeNO (fractional exhaled nitric oxide) >40 ppb supports eosinophilic airway inflammation
+
+STEP-WISE PHARMACOLOGICAL MANAGEMENT (ADULTS)
+
+Step 1 — Mild Intermittent:
+- Short-acting beta-2 agonist (SABA), e.g., Salbutamol 100 mcg — 2 puffs as required
+
+Step 2 — Regular Preventer:
+- Add inhaled corticosteroid (ICS), e.g., Beclometasone 200–400 mcg/day in divided doses
+- ICS reduces airway inflammation; must be used EVERY DAY even when well
+
+Step 3 — Add-on Therapy:
+- Add long-acting beta-2 agonist (LABA), e.g., Salmeterol or Formoterol
+- Or increase ICS dose
+- Or add leukotriene receptor antagonist (LTRA), e.g., Montelukast
+
+Step 4 — Specialist referral:
+- Consider biologic agents (e.g., Mepolizumab for severe eosinophilic asthma)
+
+INHALER TECHNIQUE — IMPORTANT
+- Incorrect inhaler technique is one of the most common causes of poor asthma control
+- Spacer devices should be used with pressurised metered-dose inhalers (pMDI) for children and elderly patients
+- Mouth should be rinsed after ICS inhalers to prevent oral candidiasis (thrush)
+
+MONITORING AND CONTROL
+- Use reliever inhaler (SABA) more than 3 times/week = inadequately controlled asthma
+- Check: symptom frequency, night waking, exercise limitation, reliever use, peak flow
+- Review inhaler technique at every appointment
+
+ASTHMA ACTION PLAN
+Every patient should have a written personal asthma action plan:
+- Green zone: No symptoms — continue preventer
+- Yellow zone: Symptoms increasing — use reliever, double preventer dose (if advised)
+- Red zone: Severe attack — use reliever every 20 minutes, call emergency services
+
+ACUTE SEVERE ASTHMA — EMERGENCY CRITERIA
+Seek emergency care immediately if:
+- Unable to complete sentences in one breath
+- Respiratory rate >25/min
+- Peak flow <50% best
+- Oxygen saturation <92%
+- Signs of severe distress, cyanosis, silent chest (very dangerous — reduced air movement)
+
+COMMON TRIGGERS
+- Allergens: house dust mites, pet dander, pollen, mould
+- Respiratory infections (especially viral)
+- Exercise
+- Cold air
+- Cigarette smoke (active and passive)
+- NSAIDs and aspirin (in aspirin-exacerbated respiratory disease)
+- Occupational exposures (isocyanates, flour dust)
+
+PAEDIATRIC CONSIDERATIONS
+- Children under 12 should use spacer with pMDI
+- Tidal breathing technique with spacer for children under 5
+- Spacer and face mask for infants
+- Rinse mouth after preventer inhalers
+- Ensure school has an asthma management plan and a spare reliever inhaler
