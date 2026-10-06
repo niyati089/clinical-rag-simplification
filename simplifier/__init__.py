@@ -14,7 +14,7 @@ Example:
     >>> print(result['simplified_text'])
 """
 
-from .simplify import simplify
+from .simplify import simplify, simplify_rag_result
 from .schema import SimplifierOutput, EntityModel, GlossaryEntry, Highlight, ReadabilityScores
 from .masking import mask_text, restore_text, validate_protected_values, get_protected_values
 from .ner import NEREngine, extract_entities
@@ -25,6 +25,7 @@ from .layout import format_markdown_output, identify_highlights
 __version__ = "0.1.0"
 __all__ = [
     "simplify", 
+    "simplify_rag_result",
     "SimplifierOutput", 
     "EntityModel", 
     "GlossaryEntry", 

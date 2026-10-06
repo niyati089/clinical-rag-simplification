@@ -1,0 +1,71 @@
+{
+  "reading_level": "Basic",
+  "total_chunks": 2,
+  "disclaimer": "This information is for educational purposes only and should not replace professional medical advice.",
+  "results": [
+    {
+      "chunk_id": "chunk_001_diabetes",
+      "original_chunk": "Patient has diabetes mellitus type 2 with HbA1c of 8.2%. Current medication regimen includes metformin 500 mg twice daily. Patient should monitor blood glucose levels and maintain dietary compliance.",
+      "section_title": "Diabetes Management",
+      "chunk_index": 0,
+      "simplified_output": {
+        "simple_explanation": "You have type 2 diabetes. Your HbA1c test result is 8.2%, which means your blood sugar has been too high.",
+        "important_instructions": [
+          "Check your blood sugar levels as directed by your doctor",
+          "Follow your meal plan carefully"
+        ],
+        "medication_guidance": [
+          "Take metformin 500 mg twice daily with meals",
+          "Do not skip doses even if you feel fine"
+        ],
+        "follow_up": [
+          "Schedule follow-up appointment in 3 months",
+          "Call if blood sugar readings are consistently above 250"
+        ]
+      },
+      "retrieved_references": [
+        {
+          "source": "ADA Guidelines 2023",
+          "relevance_score": 0.89,
+          "content": "HbA1c targets for most adults with diabetes should be below 7%",
+          "url": "https://diabetes.org/guidelines"
+        },
+        {
+          "source": "Metformin Prescribing Information",
+          "relevance_score": 0.82,
+          "content": "Standard starting dose is 500mg twice daily with meals",
+          "url": "https://example.com/metformin"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk_002_hypertension",
+      "original_chunk": "Blood pressure readings consistently elevated at 158/94 mmHg. Initiated on lisinopril 10 mg once daily for hypertension management. Patient counseled on sodium restriction and regular exercise.",
+      "section_title": "Hypertension Treatment",
+      "chunk_index": 1,
+      "simplified_output": {
+        "simple_explanation": "Your blood pressure is too high at 158/94 mmHg. Normal blood pressure should be less than 120/80.",
+        "important_instructions": [
+          "Limit salt in your diet to less than 2000 mg per day",
+          "Exercise for at least 30 minutes most days of the week"
+        ],
+        "medication_guidance": [
+          "Take lisinopril 10 mg once daily at the same time each day",
+          "This medication helps lower your blood pressure"
+        ],
+        "follow_up": [
+          "Check blood pressure at home daily and keep a log",
+          "Return in 2 weeks to check how the medication is working"
+        ]
+      },
+      "retrieved_references": [
+        {
+          "source": "AHA Blood Pressure Guidelines",
+          "relevance_score": 0.91,
+          "content": "Stage 2 hypertension is defined as systolic ≥140 or diastolic ≥90",
+          "url": "https://heart.org/bp-guidelines"
+        }
+      ]
+    }
+  ]
+}

@@ -23,7 +23,7 @@ from .schema import SimplifierOutput, TextOrSections, SECTION_KEYS, EntityModel
 from .masking import mask_text, restore_text, get_protected_values, validate_protected_values
 from .ner import extract_entities
 from .glossary import generate_glossary, get_simple_replacement
-from .readability import calculate_readability_scores, ReadabilityCalculator
+from .readability import calculate_readability_scores, ReadabilityCalculator, readability_calculator
 from .layout import format_markdown_output, identify_highlights
 
 
@@ -485,5 +485,298 @@ def _combine_sections(sections: Dict[str, str]) -> str:
         text = sections.get(key, "").strip()
         if text:
             parts.append(text)
+    return "\n\n".join(parts)
+
+
+def simplify_rag_result(rag_result: dict, level: str = None) -> dict:
+    """
+    Simplify RAG pipeline output while preserving structure and references.
+    
+    This function accepts the exact output format from Person A's RAGPipeline.process()
+    and processes it through the medical text simplification pipeline while maintaining
+    all original chunk metadata and references.
+    
+    Args:
+        rag_result: RAG pipeline output dict with format:
+            {
+              "reading_level": "Basic|Intermediate|Advanced",
+              "total_chunks": int,
+              "disclaimer": str,
+              "results": [
+                {
+                  "chunk_id": str,
+                  "original_chunk": str,
+                  "section_title": str,
+                  "chunk_index": int,
+                  "simplified_output": {
+                    "simple_explanation": str,
+                    "important_instructions": [str],
+                    "medication_guidance": [str],
+                    "follow_up": [str]
+                  },
+                  "retrieved_references": [...]
+                }
+              ]
+            }
+        level: Target simplification level. Defaults to rag_result["reading_level"] normalized to lowercase.
+    
+    Returns:
+        Enhanced RAG result dict with added simplification features:
+        - Each chunk gets: entities, glossary, highlights, scores
+        - Top level gets: aggregated glossary, scores, protected_values_check
+        Validates against RagResultB schema.
+    
+    Raises:
+        ValueError: If input format is invalid or level is unsupported
+        KeyError: If required RAG result fields are missing
+    """
+    from .readability import readability_calculator
+    
+    # Validate input structure
+    if not isinstance(rag_result, dict):
+        raise ValueError(f"rag_result must be dict, got {type(rag_result)}")
+    
+    required_fields = ["reading_level", "total_chunks", "disclaimer", "results"]
+    for field in required_fields:
+        if field not in rag_result:
+            raise KeyError(f"Required field '{field}' missing from rag_result")
+    
+    # Normalize level parameter
+    if level is None:
+        level = rag_result["reading_level"].strip().lower()
+    else:
+        level = level.strip().lower()
+    
+    # Validate level parameter
+    valid_levels = ["basic", "intermediate", "advanced"]
+    if level not in valid_levels:
+        raise ValueError(f"level must be one of {valid_levels}, got '{level}'")
+    
+    # Initialize aggregation containers
+    all_glossary_entries = []
+    all_original_scores = []
+    all_simplified_scores = []
+    protected_values_missing = []
+    
+    # Process each chunk
+    enhanced_results = []
+    
+    for chunk in rag_result["results"]:
+        # Validate chunk structure
+        required_chunk_fields = ["chunk_id", "original_chunk", "section_title", "chunk_index", "simplified_output", "retrieved_references"]
+        for field in required_chunk_fields:
+            if field not in chunk:
+                raise KeyError(f"Required chunk field '{field}' missing")
+        
+        # Extract protected values from original chunk
+        original_chunk = chunk["original_chunk"]
+        protected_values = get_protected_values(original_chunk)
+        
+        # Extract entities from original chunk
+        entities = extract_entities(original_chunk)
+        
+        # Process simplified_output sections
+        simplified_output = chunk["simplified_output"]
+        processed_sections = {}
+        llm_explanations = {}
+        
+        # Process simple_explanation (string)
+        simple_explanation = simplified_output.get("simple_explanation", "")
+        if simple_explanation:
+            processed_sections["simple_explanation"] = _process_text_section(simple_explanation, level)
+        else:
+            processed_sections["simple_explanation"] = ""
+        
+        # Process list sections
+        for list_field in ["important_instructions", "medication_guidance", "follow_up"]:
+            section_list = simplified_output.get(list_field, [])
+            if isinstance(section_list, list):
+                processed_list = []
+                for item in section_list:
+                    if isinstance(item, str) and item.strip():
+                        processed_item = _process_text_section(item, level)
+                        processed_list.append(processed_item)
+                processed_sections[list_field] = processed_list
+            else:
+                processed_sections[list_field] = []
+        
+        # Collect LLM explanations for glossary
+        section_entities = extract_entities(simple_explanation)
+        for entity in section_entities:
+            if entity.text.lower() not in llm_explanations:
+                explanation = _get_llm_engine().explain_term(entity.text)
+                if explanation:
+                    llm_explanations[entity.text.lower()] = explanation
+        
+        # Generate glossary for this chunk
+        chunk_glossary = generate_glossary(entities, llm_explanations)
+        all_glossary_entries.extend(chunk_glossary)
+        
+        # Calculate readability scores
+        original_scores = calculate_readability_scores(original_chunk)
+        simplified_combined = _combine_simplified_output_sections(processed_sections)
+        simplified_scores = calculate_readability_scores(simplified_combined)
+        
+        all_original_scores.append(original_scores)
+        all_simplified_scores.append(simplified_scores)
+        
+        # Check protected values preservation
+        for protected_value in protected_values:
+            if protected_value not in simplified_combined:
+                protected_values_missing.append(protected_value)
+        
+        # Identify highlights
+        section_dict = {
+            "simple_explanation": processed_sections["simple_explanation"],
+            "important_instructions": "\n".join(processed_sections["important_instructions"]),
+            "medication_guidance": "\n".join(processed_sections["medication_guidance"]),
+            "follow_up": "\n".join(processed_sections["follow_up"])
+        }
+        highlights = identify_highlights(section_dict)
+        
+        # Build enhanced chunk result
+        enhanced_chunk = {
+            # Original fields preserved exactly
+            "chunk_id": chunk["chunk_id"],
+            "original_chunk": chunk["original_chunk"],
+            "section_title": chunk["section_title"],
+            "chunk_index": chunk["chunk_index"],
+            "simplified_output": {
+                "simple_explanation": processed_sections["simple_explanation"],
+                "important_instructions": processed_sections["important_instructions"],
+                "medication_guidance": processed_sections["medication_guidance"],
+                "follow_up": processed_sections["follow_up"]
+            },
+            "retrieved_references": chunk["retrieved_references"],
+            
+            # New fields added by simplify_rag_result
+            "entities": [entity.model_dump() if hasattr(entity, 'model_dump') else entity for entity in entities],
+            "glossary": [entry.model_dump() if hasattr(entry, 'model_dump') else entry for entry in chunk_glossary],
+            "highlights": [highlight if isinstance(highlight, dict) else highlight.model_dump() for highlight in highlights],
+            "scores": {
+                "original": {
+                    "flesch_reading_ease": original_scores["flesch_reading_ease"],
+                    "grade_level": original_scores["grade_level"]
+                },
+                "simplified": {
+                    "flesch_reading_ease": simplified_scores["flesch_reading_ease"],
+                    "grade_level": simplified_scores["grade_level"]
+                }
+            }
+        }
+        
+        enhanced_results.append(enhanced_chunk)
+    
+    # Aggregate glossary (remove duplicates)
+    glossary_dict = {}
+    for entry in all_glossary_entries:
+        key = entry.term.lower()
+        if key not in glossary_dict:
+            glossary_dict[key] = entry
+    
+    aggregated_glossary = sorted(glossary_dict.values(), key=lambda x: x.term.lower())
+    
+    # Calculate aggregate scores
+    if all_original_scores:
+        avg_original_flesch = sum(s["flesch_reading_ease"] for s in all_original_scores) / len(all_original_scores)
+        avg_original_grade = sum(s["grade_level"] for s in all_original_scores) / len(all_original_scores)
+    else:
+        avg_original_flesch = avg_original_grade = 0.0
+    
+    if all_simplified_scores:
+        avg_simplified_flesch = sum(s["flesch_reading_ease"] for s in all_simplified_scores) / len(all_simplified_scores)
+        avg_simplified_grade = sum(s["grade_level"] for s in all_simplified_scores) / len(all_simplified_scores)
+    else:
+        avg_simplified_flesch = avg_simplified_grade = 0.0
+    
+    # Build final result
+    enhanced_rag_result = {
+        # Original top-level fields preserved exactly
+        "reading_level": rag_result["reading_level"],
+        "total_chunks": rag_result["total_chunks"],
+        "disclaimer": rag_result["disclaimer"],
+        "results": enhanced_results,
+        
+        # New top-level fields
+        "glossary": [entry.model_dump() if hasattr(entry, 'model_dump') else entry for entry in aggregated_glossary],
+        "scores": {
+            "original": {
+                "flesch_reading_ease": round(avg_original_flesch, 2),
+                "grade_level": round(avg_original_grade, 2)
+            },
+            "simplified": {
+                "flesch_reading_ease": round(avg_simplified_flesch, 2),
+                "grade_level": round(avg_simplified_grade, 2)
+            }
+        },
+        "protected_values_check": {
+            "passed": len(protected_values_missing) == 0,
+            "missing": list(set(protected_values_missing))  # Remove duplicates
+        }
+    }
+    
+    # Validate against schema and return
+    from .schema import RagResultB
+    validated_result = RagResultB(**enhanced_rag_result)
+    return validated_result.model_dump()
+
+
+def _process_text_section(text: str, level: str) -> str:
+    """
+    Process a single text section through the simplification pipeline.
+    
+    Args:
+        text: Text content to process
+        level: Target simplification level
+        
+    Returns:
+        Processed text
+    """
+    if not text or not text.strip():
+        return text
+    
+    # Mask protected values
+    masked_text, placeholder_map = mask_text(text)
+    
+    # Check if LLM rewrite is needed
+    compliance = readability_calculator.check_level_compliance(masked_text, level)
+    if not compliance.get("grade_target_met", True):
+        # Text is above target grade level - use LLM to simplify
+        simplified_masked = _get_llm_engine().simplify_text(masked_text, level)
+    else:
+        # Text meets target - use rule-based processing only
+        simplified_masked = _get_llm_engine()._rule_based_simplification(masked_text, level)
+    
+    # Restore protected values
+    simplified_text = restore_text(simplified_masked, placeholder_map)
+    
+    return simplified_text
+
+
+def _combine_simplified_output_sections(sections: Dict) -> str:
+    """
+    Combine simplified output sections into a single text string.
+    
+    Args:
+        sections: Dictionary with simple_explanation (str) and list sections
+        
+    Returns:
+        Combined text string
+    """
+    parts = []
+    
+    # Add simple explanation
+    if sections.get("simple_explanation", "").strip():
+        parts.append(sections["simple_explanation"])
+    
+    # Add list sections
+    for field in ["important_instructions", "medication_guidance", "follow_up"]:
+        items = sections.get(field, [])
+        if isinstance(items, list) and items:
+            # Join list items with newlines
+            section_text = "\n".join(item for item in items if isinstance(item, str) and item.strip())
+            if section_text:
+                parts.append(section_text)
+    
     return "\n\n".join(parts)
 
