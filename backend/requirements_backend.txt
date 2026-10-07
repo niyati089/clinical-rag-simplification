@@ -1,0 +1,19 @@
+# backend/requirements_backend.txt
+# Install these ON TOP of the root requirements.txt
+#
+#   pip install -r requirements.txt -r backend/requirements_backend.txt
+
+# ── FastAPI stack ────────────────────────────────────────────────────────────
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+python-multipart>=0.0.9        # required for UploadFile / File()
+
+# ── Document extraction ───────────────────────────────────────────────────────
+pdfplumber>=0.11.0             # PDF text extraction
+python-docx>=1.1.0             # DOCX extraction
+easyocr>=1.7.1                 # Image OCR (PNG/JPG) — downloads ~1 GB models on first use
+Pillow>=10.0.0                 # Image handling for EasyOCR
+
+# ── Auth (only used when ENABLE_AUTH=true) ────────────────────────────────────
+PyJWT>=2.8.0
+passlib[bcrypt]>=1.7.4

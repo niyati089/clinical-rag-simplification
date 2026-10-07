@@ -91,3 +91,12 @@ logs/
 Thumbs.db
 ehthumbs.db
 desktop.ini
+
+# Model downloads (install via spacy download)
+models/
+
+# LLM API cache
+data/llm_cache/
+
+# Workflow artifacts
+.agents/

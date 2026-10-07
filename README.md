@@ -338,4 +338,433 @@ The `evaluate_rag.py` script:
 - Unsupported claims / hallucinations
 - Instruction coverage
 - Relevance
-- Explanation quality
+---
+
+# Medical Text Simplifier (Simplification & Backend Layer)
+
+A Python package for simplifying medical text across different reading levels while preserving critical information like dosages, lab values, and important instructions. Designed as the language simplification layer in a medical RAG pipeline with stable JSON API for FastAPI integration.
+
+## Installation
+
+```bash
+# Install package dependencies
+pip install -r requirements.txt
+
+# Download required scispaCy model
+python -m spacy download en_core_sci_md
+
+# Set up environment variable for LLM API (optional)
+export ANTHROPIC_API_KEY="your-api-key-here"
+```
+
+## API Reference
+
+### Main Function
+
+```python
+def simplify(text_or_sections, level="basic") -> dict
+```
+
+**Parameters:**
+- `text_or_sections`: Input text in one of two formats:
+  - `str`: Plain medical text to be simplified
+  - `dict`: Structured sections with keys:
+    - `simple_explanation` (str): Main content explanation
+    - `important_instructions` (str): Critical patient instructions
+    - `medication_guidance` (str): Medication-related information  
+    - `follow_up` (str): Follow-up care instructions
+- `level`: Target reading level, one of:
+  - `"basic"`: 6th grade or below, all terms simplified inline, short sentences
+  - `"intermediate"`: 8th-10th grade, key terms annotated in brackets
+  - `"advanced"`: Original terminology preserved, definitions in glossary only
+
+**Returns:**
+Dictionary with the following JSON-serializable structure:
+
+```python
+{
+  "level": str,                                    # Applied simplification level
+  "sections": {                                    # Text organized by section
+    "simple_explanation": str,
+    "important_instructions": str, 
+    "medication_guidance": str,
+    "follow_up": str
+  },
+  "simplified_text": str,                         # Full markdown-formatted text
+  "entities": [                                   # Extracted medical entities
+    {
+      "text": str,                                 # Entity text
+      "type": "DISEASE|DRUG|PROCEDURE|LAB_VALUE|ABBREVIATION",
+      "start": int,                              # Position in simplified text
+      "end": int
+    }
+  ],
+  "glossary": [                                  # Alphabetical term definitions
+    {
+      "term": str,
+      "type": str,
+      "explanation": str
+    }
+  ],
+  "highlights": [                                # Important sentences to emphasize
+    {
+      "section": str,
+      "sentence": str
+    }
+  ],
+  "scores": {                                    # Readability metrics
+    "original": {
+      "flesch_reading_ease": float,              # 0-100, higher = easier
+      "grade_level": float                       # Flesch-Kincaid grade level
+    },
+    "simplified": {
+      "flesch_reading_ease": float,
+      "grade_level": float
+    }
+  },
+  "protected_values": [str]                      # Preserved dosages/units/frequencies
+}
+```
+
+## Usage Examples
+
+### Basic Usage with Plain Text
+
+```python
+from simplifier import simplify
+
+# Simple text input
+result = simplify(
+    "Your HbA1c level is 8.2%. Take metformin 500mg twice daily with meals.",
+    level="basic"
+)
+
+print(result['simplified_text'])
+print(f"Reading level improved from {result['scores']['original']['grade_level']:.1f} to {result['scores']['simplified']['grade_level']:.1f}")
+```
+
+### Structured Input with Sections
+
+```python
+from simplifier import simplify
+
+# Structured input matching RAG output format
+medical_report = {
+    "simple_explanation": "Your blood sugar test (HbA1c) shows you have diabetes. The level is 8.2%, which is higher than the target of 7%.",
+    "important_instructions": "Take your medication exactly as prescribed. Check your blood sugar daily.",
+    "medication_guidance": "Metformin 500mg: Take 2 times per day with breakfast and dinner.", 
+    "follow_up": "Return in 3 months for blood work to check your progress."
+}
+
+result = simplify(medical_report, level="intermediate")
+```
+
+### FastAPI Integration
+
+```python
+from fastapi import FastAPI
+from simplifier import simplify
+
+app = FastAPI()
+
+@app.post("/simplify")
+async def simplify_text(
+    text: str,
+    level: str = "basic"
+):
+    """Endpoint for medical text simplification."""
+    try:
+        result = simplify(text, level)
+        return result
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail="Simplification failed")
+```
+
+## Features
+
+### 🔍 Medical Entity Recognition
+- Diseases, drugs, procedures, lab values, and abbreviations
+- Uses scispaCy (en_core_sci_md) with custom abbreviation detection
+- Regex-based lab value extraction with units
+
+### 🔒 Number Safety
+- Automatically detects and preserves dosages, units, frequencies, lab values
+- Masks values during rewriting, restores exactly after simplification
+- Validation ensures protected values are never altered
+
+### 📚 Term Simplification  
+- Curated dictionary of 100+ common medical terms
+- LLM fallback for unknown terms (Anthropic API)
+- Caching for performance optimization
+- Offline rule-based fallback for testing
+
+### 📖 Reading Level Control
+- **Basic**: 6th grade, short sentences (<15 words), all terms explained inline
+- **Intermediate**: 8th-10th grade, key terms in brackets [like this]
+- **Advanced**: Original terminology, glossary definitions only
+
+### 📊 Quality Metrics
+- Flesch Reading Ease and Flesch-Kincaid grade level scoring
+- Before/after readability comparison
+- Entity recognition precision/recall evaluation
+
+### 🎨 Structured Output
+- Markdown formatting with section headings
+- Bullet points for instructions
+- Bold highlighting for critical information
+- Mobile-friendly short paragraphs
+
+## Development
+
+### Running Tests
+```bash
+# Run all tests
+python -m pytest tests/
+
+# With coverage
+python -m pytest tests/ --cov=simplifier
+```
+
+### Demo Scripts
+```bash
+# Process a single document
+python run_demo.py sample.txt --level basic
+
+# Evaluate all sample documents
+python evaluate_B.py
+# Generates results.csv with metrics
+```
+
+### Project Structure
+```
+simplifier/
+├── __init__.py          # Main API exports
+├── simplify.py          # Core simplification logic
+├── schema.py            # Pydantic models
+├── ner.py              # Named entity recognition
+├── masking.py          # Number protection system
+├── glossary.py         # Term definition generation
+├── readability.py      # Reading level metrics
+└── layout.py           # Markdown formatting
+
+data/
+├── sample_docs/        # Test medical documents
+├── mock_A_outputs/     # Sample RAG pipeline outputs  
+├── ner_labels.json     # NER evaluation dataset
+└── term_map.json       # Medical term dictionary
+
+tests/
+├── test_ner.py         # Entity recognition tests
+├── test_masking.py     # Number preservation tests
+├── test_readability.py # Reading level tests
+└── test_schema.py      # API schema validation
+```
+
+## Error Handling
+
+The `simplify()` function raises:
+- `ValueError`: Invalid input format or unsupported level
+- `RuntimeError`: External dependency failures (scispaCy, API calls)
+
+For production use, wrap calls in try-except blocks and provide fallback responses.
+
+## License
+
+MIT License - see LICENSE file for details.
+
+---
+
+## RAG Pipeline Integration
+
+The `simplify_rag_result()` function is designed to work seamlessly with Person A's RAG pipeline output, adding medical text simplification while preserving all original structure and references.
+
+### RAG Adapter Function
+
+```python
+def simplify_rag_result(rag_result: dict, level: str = None) -> dict
+```
+
+**Parameters:**
+- `rag_result`: Exact output dict from Person A's `RAGPipeline.process()` method
+- `level`: Target simplification level ("basic", "intermediate", "advanced"). Defaults to `rag_result["reading_level"]` normalized to lowercase.
+
+**Input Schema** (from RAG Pipeline):
+```python
+{
+  "reading_level": "Basic|Intermediate|Advanced",
+  "total_chunks": int,
+  "disclaimer": str,
+  "results": [
+    {
+      "chunk_id": str,
+      "original_chunk": str,
+      "section_title": str,
+      "chunk_index": int,
+      "simplified_output": {
+        "simple_explanation": str,
+        "important_instructions": [str],
+        "medication_guidance": [str],
+        "follow_up": [str]
+      },
+      "retrieved_references": [
+        {
+          "text": str,
+          "source": str,
+          "document_name": str,
+          # ... other reference fields
+        }
+      ]
+    }
+  ]
+}
+```
+
+**Output Schema** (Enhanced RAG Result):
+```python
+{
+  # Original top-level fields preserved exactly
+  "reading_level": str,
+  "total_chunks": int,
+  "disclaimer": str,
+  
+  # Enhanced results with simplification features
+  "results": [
+    {
+      # Original chunk fields preserved exactly
+      "chunk_id": str,
+      "original_chunk": str,
+      "section_title": str,
+      "chunk_index": int,
+      "simplified_output": {
+        "simple_explanation": str,              # Processed through simplification
+        "important_instructions": [str],        # Each list item processed
+        "medication_guidance": [str],           # Lists preserved as lists
+        "follow_up": [str]
+      },
+      "retrieved_references": [...],            # Preserved exactly as-is
+      
+      # New fields added by simplify_rag_result
+      "entities": [EntityModel],                # Extracted medical entities
+      "glossary": [GlossaryEntry],             # Terms defined for this chunk
+      "highlights": [Highlight],               # Important sentences to emphasize
+      "scores": {                              # Before/after readability
+        "original": ReadabilityScore,
+        "simplified": ReadabilityScore
+      }
+    }
+  ],
+  
+  # New top-level aggregated fields
+  "glossary": [GlossaryEntry],                # Combined across all chunks
+  "scores": ReadabilityScores,                # Averaged across all chunks
+  "protected_values_check": {                 # Validation results
+    "passed": bool,
+    "missing": [str]                          # List of values lost during processing
+  }
+}
+```
+
+### FastAPI Integration Example
+
+```python
+from fastapi import FastAPI, HTTPException
+from src.rag_pipeline import RAGPipeline
+from simplifier import simplify_rag_result
+
+app = FastAPI()
+rag_pipeline = RAGPipeline()
+
+class ProcessRequest(BaseModel):
+    clinical_text: str
+    reading_level: str = "Basic"
+    simplification_level: Optional[str] = None  # Override RAG level if needed
+
+@app.post("/process")
+async def process_clinical_text(request: ProcessRequest):
+    """Complete pipeline: RAG retrieval + medical simplification."""
+    try:
+        # Step 1: RAG pipeline processing
+        rag_result = rag_pipeline.process(
+            clinical_text=request.clinical_text,
+            reading_level=request.reading_level
+        )
+        
+        # Step 2: Medical simplification layer
+        enhanced_result = simplify_rag_result(
+            rag_result=rag_result,
+            level=request.simplification_level  # Optional override
+        )
+        
+        return enhanced_result
+        
+    except FileNotFoundError:
+        raise HTTPException(503, "Vector index not built")
+    except ValueError as e:
+        raise HTTPException(400, f"Invalid input: {e}")
+    except Exception as e:
+        raise HTTPException(500, f"Processing failed: {e}")
+
+@app.post("/simplify-rag")
+async def simplify_existing_rag_result(rag_result: dict, level: str = "basic"):
+    """Process existing RAG result through simplification layer."""
+    try:
+        result = simplify_rag_result(rag_result, level)
+        return result
+    except Exception as e:
+        raise HTTPException(500, f"Simplification failed: {e}")
+```
+
+### Key Features
+
+- **Structure Preservation**: All original chunk metadata (`chunk_id`, `original_chunk`, `section_title`, `chunk_index`, `retrieved_references`) is preserved exactly as provided by the RAG pipeline.
+
+- **List Processing**: The `important_instructions`, `medication_guidance`, and `follow_up` fields remain as lists. Each list item is processed individually through the simplification pipeline while maintaining the list structure.
+
+- **Protected Values**: Dosages, lab values, units, and frequencies are automatically detected and preserved during simplification. The `protected_values_check` field reports whether all values were successfully preserved.
+
+- **Level Normalization**: The function accepts level parameters in any case ("Basic", "INTERMEDIATE", "advanced") and normalizes them to lowercase for internal processing.
+
+- **Offline Support**: Works in offline mode using rule-based simplification when LLM APIs are unavailable.
+
+- **Schema Validation**: Output is validated against Pydantic models to ensure JSON serialization compatibility.
+
+### Usage Example
+
+```python
+import json
+from src.rag_pipeline import RAGPipeline  
+from simplifier import simplify_rag_result
+
+# Initialize RAG pipeline
+pipeline = RAGPipeline()
+
+# Clinical text input
+clinical_text = """
+Patient has diabetes mellitus type 2 with HbA1c of 8.2%. 
+Current medication includes metformin 500 mg twice daily.
+Blood pressure consistently elevated at 158/94 mmHg.
+Started on lisinopril 10 mg once daily.
+"""
+
+# Step 1: Process through RAG pipeline
+rag_result = pipeline.process(
+    clinical_text=clinical_text,
+    reading_level="Basic"
+)
+
+# Step 2: Enhance with medical simplification
+enhanced_result = simplify_rag_result(rag_result)
+
+# The result contains:
+print(f"Processed {enhanced_result['total_chunks']} chunks")
+print(f"Protected values preserved: {enhanced_result['protected_values_check']['passed']}")
+print(f"Aggregate glossary contains {len(enhanced_result['glossary'])} terms")
+
+# Access enhanced chunk data
+for chunk in enhanced_result['results']:
+    print(f"Chunk {chunk['chunk_index']}: {chunk['section_title']}")
+    print(f"  Entities found: {len(chunk['entities'])}")
+    print(f"  Grade level: {chunk['scores']['original']['grade_level']:.1f} → {chunk['scores']['simplified']['grade_level']:.1f}")
+```
