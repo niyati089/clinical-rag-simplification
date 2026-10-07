@@ -49,7 +49,8 @@ RERANKER_TOP_K: int = int(os.getenv("RERANKER_TOP_K", "3"))
 
 # ── LLM ────────────────────────────────────────────────────────────────────
 LLM_PROVIDER: str = os.getenv("LLM_PROVIDER", "groq")  # groq | openai | google | anthropic
-LLM_MODEL: str = os.getenv("LLM_MODEL", "llama-3.3-70b-versatile")
+# Groq models: qwen/qwen3.8-27b | openai/gpt-oss-120b | openai/gpt-oss-20b
+LLM_MODEL: str = os.getenv("LLM_MODEL", "qwen/qwen3.8-27b")
 LLM_API_KEY: str = os.getenv("LLM_API_KEY", "")
 LLM_TEMPERATURE: float = float(os.getenv("LLM_TEMPERATURE", "0.2"))
 LLM_MAX_TOKENS: int = int(os.getenv("LLM_MAX_TOKENS", "1500"))

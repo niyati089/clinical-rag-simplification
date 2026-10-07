@@ -29,9 +29,13 @@ class JobStatus(str, Enum):
 
 class JobStage(str, Enum):
     QUEUED = "queued"
+    EXTRACTING = "extracting"
+    CHUNKING = "chunking"
+    EMBEDDING = "embedding"
     PARSING = "parsing"
     RETRIEVING = "retrieving"
     GENERATING = "generating"
+    SIMPLIFYING = "simplifying"
     REFINING = "refining"
     VERIFYING = "verifying"
     DONE = "done"

@@ -173,15 +173,9 @@ _PROVIDER_MAP = {
 
 def _call_llm(prompt: str, provider: str = LLM_PROVIDER) -> str:
     """
-    Dispatch to the correct LLM provider and return raw text response.
-
-    Raises
-    ------
-    ValueError
-        If the provider is not recognised.
-    EnvironmentError
-        If LLM_API_KEY is not set.
+    Dispatch to the correct LLM provider and return raw text response with retry logic.
     """
+    import time
     if not LLM_API_KEY:
         raise EnvironmentError(
             "LLM_API_KEY is not set. "
@@ -196,7 +190,23 @@ def _call_llm(prompt: str, provider: str = LLM_PROVIDER) -> str:
         )
 
     logger.info("Calling LLM provider=%s model=%s", provider_lower, LLM_MODEL)
-    return _PROVIDER_MAP[provider_lower](prompt)
+    
+    max_retries = 4
+    delay = 2.0
+    for attempt in range(max_retries):
+        try:
+            return _PROVIDER_MAP[provider_lower](prompt)
+        except Exception as exc:
+            err_str = str(exc)
+            if ("429" in err_str or "rate_limit" in err_str.lower()) and attempt < max_retries - 1:
+                logger.warning(
+                    "Rate limit (429) encountered. Retrying in %.1fs (attempt %d/%d)...",
+                    delay, attempt + 1, max_retries
+                )
+                time.sleep(delay)
+                delay *= 2
+            else:
+                raise
 
 
 # ── Public API ───────────────────────────────────────────────────────────────

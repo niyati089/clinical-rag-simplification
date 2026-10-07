@@ -1,0 +1,63 @@
+THYROID FUNCTION AND THYROID DISORDERS — CLINICAL MANAGEMENT GUIDELINES
+
+OVERVIEW OF THYROID FUNCTION TESTS (TFTs)
+Thyroid function tests evaluate the metabolic state of the thyroid gland and diagnose hypo- and hyperthyroidism.
+- Thyroid-Stimulating Hormone (TSH): Produced by the anterior pituitary; most sensitive first-line screening test.
+  - Typical adult reference range: 0.4 to 4.5 mIU/L (may vary slightly by laboratory assay and age).
+  - Inverted logarithmic relationship: small changes in free thyroid hormones trigger large shifts in TSH.
+- Free Thyroxine (Free T4 / FT4): Biologically active circulating thyroxine (typical range: 9.0–25.0 pmol/L or 0.8–1.8 ng/dL).
+- Free Triiodothyronine (Free T3 / FT3): Most metabolically active hormone, converted from T4 (typical range: 3.1–6.8 pmol/L). Useful in T3-toxicosis and monitoring severe hyperthyroidism.
+- Thyroid Autoantibodies:
+  - Anti-TPO (Thyroid Peroxidase Antibodies) and Anti-Tg (Thyroglobulin Antibodies): Diagnostic for Hashimoto's autoimmune thyroiditis.
+  - TSH-Receptor Antibodies (TRAb / TSI): Diagnostic for Graves' disease.
+
+HYPOTHYROIDISM (UNDERACTIVE THYROID)
+Classification and Lab Patterns:
+- Primary Overt Hypothyroidism: Elevated TSH with subnormal/low Free T4.
+- Subclinical Hypothyroidism: Elevated TSH with normal Free T4. Treatment indicated if TSH ≥ 10 mIU/L, symptomatic, high anti-TPO titres, or in pregnancy/planning pregnancy.
+- Secondary / Central Hypothyroidism (Pituitary/Hypothalamic failure): Low or inappropriately normal TSH with low Free T4.
+
+Clinical Presentation:
+- Lethargy, chronic fatigue, cold intolerance, unexplained weight gain despite poor appetite.
+- Constipation, dry and coarse skin, hair loss, brittle nails.
+- Bradycardia, periorbital puffiness, hoarse voice, menorrhagia, memory impairment, depression.
+
+Management and Medication Guidance:
+- Levothyroxine (synthetic T4) is the treatment of choice.
+  - Typical starting dose: 1.6 mcg/kg/day in young healthy adults; 25–50 mcg/day in elderly patients or those with ischaemic heart disease to avoid precipitating angina/arrhythmias.
+- Administration instructions:
+  - Take as a single daily dose in the morning on an empty stomach with a full glass of water, at least 30 to 60 minutes before breakfast or caffeine/coffee.
+  - Avoid co-administration with calcium supplements, iron tablets, antacids, or proton pump inhibitors (separate by at least 4 hours).
+- Monitoring: Recheck serum TSH 6 to 8 weeks after initiation or dosage adjustment. Once stable, monitor TSH annually.
+
+HYPERTHYROIDISM AND THYROTOXICOSIS (OVERACTIVE THYROID)
+Classification and Lab Patterns:
+- Primary Overt Hyperthyroidism: Suppressed/low TSH (<0.1 mIU/L) with elevated Free T4 and/or Free T3.
+- Subclinical Hyperthyroidism: Suppressed TSH with normal Free T4 and Free T3.
+- Common aetiologies: Graves' disease (autoimmune stimulation), Toxic Multinodular Goitre (TMNG), Solitary Toxic Adenoma, Subacute Thyroiditis.
+
+Clinical Presentation:
+- Heat intolerance, excessive sweating, weight loss despite increased appetite.
+- Palpitations, tachycardia, atrial fibrillation, fine hand tremor.
+- Anxiety, irritability, insomnia, hyperdefecation or frequent loose stools.
+- Goitre (enlarged neck gland), thyroid eye disease / exophthalmos (specific to Graves' disease).
+
+Management and Medication Guidance:
+- Thionamides (Antithyroid Drugs):
+  - Carbimazole / Methimazole: First-line antithyroid drug. Inhibits thyroid peroxidase and hormone synthesis.
+  - Propylthiouracil (PTU): Preferred in the first trimester of pregnancy and in thyroid storm (inhibits peripheral T4 to T3 conversion).
+- Symptom control: Beta-blockers (e.g., Propranolol 10–40 mg 3–4 times daily or Atenolol) to control tachycardia, tremor, and anxiety during initial weeks.
+- Definitive therapy: Radioactive Iodine (RAI ablation) or Thyroidectomy (surgical excision) for relapse or large toxic multinodular goitres.
+- CRITICAL SAFETY WARNING (Agranulocytosis):
+  - Thionamides carry a rare but life-threatening risk of agranulocytosis (severe bone marrow suppression of neutrophils).
+  - PATIENT COUNSELLING: If the patient develops a sore throat, mouth ulcers, high fever, or severe infection while taking Carbimazole/Methimazole/PTU, they must STOP the medicine immediately and obtain an emergency Full Blood Count (FBC).
+
+THYROID NODULES AND THYROID SWELLING (GOITRE)
+- Most thyroid nodules are benign (>90%).
+- Evaluation includes serum TSH, neck ultrasound with TIRADS classification (Thyroid Imaging Reporting and Data System), and Fine Needle Aspiration Cytology (FNAC) for suspicious solid, hypoechoic nodules.
+
+THYROID DISEASE IN PREGNANCY
+- Normal pregnancy increases thyroxine-binding globulin and hCG, causing physiological changes in TFTs.
+- Strict TSH control is essential for fetal neurological development:
+  - First trimester target: generally <2.5 mIU/L; second and third trimester target: <3.0 mIU/L.
+  - Pregnant women with pre-existing hypothyroidism usually require an immediate 25–30% increase in Levothyroxine dose upon confirmation of pregnancy.

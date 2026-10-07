@@ -1,0 +1,62 @@
+TYPHOID FEVER (ENTERIC FEVER) — CLINICAL MANAGEMENT GUIDELINES
+
+AETIOLOGY AND TRANSMISSION
+Typhoid fever is a systemic bacterial infection caused by Salmonella enterica serotype Typhi (S. Typhi) and Salmonella Paratyphi (paratyphoid fever).
+- Transmission occurs via the faecal-oral route through ingestion of contaminated water, food, or close contact with infected individuals or chronic carriers.
+- Incubation period is typically 7 to 14 days (range: 3 to 60 days).
+
+CLINICAL PRESENTATION AND SYMPTOMS
+Early presentation (Week 1):
+- Prolonged, insidious step-ladder fever rising over several days
+- Generalized headache, malaise, chills, body aches, and fatigue
+- Dry cough and sore throat
+- Abdominal discomfort, constipation (more common initially than diarrhoea)
+- Relative bradycardia (Faget's sign) and coated tongue
+
+Progressive / Advanced presentation (Weeks 2–3):
+- Sustained high-grade fever (39°C–40°C / 102°F–104°F)
+- "Rose spots": transient blanching maculopapular rash on abdomen and chest
+- Abdominal distension, tenderness, splenomegaly, and hepatomegaly
+- Watery, greenish "pea-soup" diarrhoea
+- Typhoid state: apathy, confusion, delirium, or extreme lethargy
+
+DIAGNOSTIC INVESTIGATIONS
+- Blood culture: Gold standard diagnostic test; sensitivity highest (60–80%) during the first week of illness prior to antibiotic therapy.
+- Stool culture: Sensitive in the 2nd and 3rd week of infection and useful for detecting chronic carrier status.
+- Bone marrow culture: Most sensitive test (>90%), particularly in patients pre-treated with antibiotics.
+- Serological tests: Widal test has limited specificity and sensitivity; culture confirmation is strongly preferred.
+- Complete blood count: Commonly shows leukopenia, neutropenia, thrombocytopenia, and mild anaemia.
+
+ANTIMICROBIAL THERAPY
+Antimicrobial therapy is essential to reduce complications and mortality. Treatment selection must consider local resistance patterns (multidrug-resistant MDR and extensively drug-resistant XDR strains).
+
+Uncomplicated Typhoid (Oral Therapy):
+- Azithromycin: 10–20 mg/kg/day (maximum 1000 mg daily) orally for 7 to 14 days (preferred first-line in areas with fluoroquinolone resistance).
+- Cefixime: 20 mg/kg/day (divided into 2 doses) orally for 10 to 14 days.
+- Ciprofloxacin: 500 mg twice daily orally for 7 to 10 days (only if local susceptibility is documented; high resistance globally).
+
+Severe or Complicated Typhoid (Intravenous Therapy):
+- Ceftriaxone: 50–100 mg/kg/day (up to 2 g daily) IV for 10 to 14 days.
+- Cefotaxime: 2 g IV every 8 hours for 10 to 14 days.
+- Meropenem / Carbapenems: Reserved for confirmed or suspected extensively drug-resistant (XDR) strains.
+- Dexamethasone adjunct: Indicated in severe delirium, stupor, coma, or shock (3 mg/kg initial dose followed by 1 mg/kg every 6 hours for 48 hours).
+
+RED FLAGS AND COMPLICATIONS
+Patients require immediate emergency medical evaluation for:
+- Gastrointestinal perforation: Sudden severe acute abdominal pain, guarding, rigidity, hypotension, and tachycardia (most common in week 3).
+- Gastrointestinal bleeding: Melena (black tarry stools), hematochezia (fresh rectal bleeding), or sudden pallor.
+- Neurological complications: Delirium, encephalopathy, seizures, altered consciousness.
+- Sepsis and septic shock: Severe hypotension, cold clammy extremities, oliguria.
+
+SUPPORTIVE CARE AND SYMPTOM MANAGEMENT
+- Hydration: Oral rehydration salts (ORS) or intravenous fluids to correct dehydration and electrolyte imbalance.
+- Antipyresis: Paracetamol (Acetaminophen) for fever management. Avoid high doses of NSAIDs (ibuprofen, aspirin) due to increased risk of gastrointestinal bleeding and ulceration.
+- Nutrition: High-calorie, digestible, low-roughage diet during acute intestinal inflammation.
+
+PATIENT COUNSELLING AND INFECTION CONTROL
+- Adherence: Complete the entire course of antibiotics even if symptoms resolve quickly to prevent relapse and development of chronic carriage.
+- Relapse risk: 5–10% of patients experience symptom recurrence 1–2 weeks after treatment; re-evaluation is necessary.
+- Hand hygiene: Strict handwashing with soap and water after using the toilet and before preparing or eating food.
+- Safe food and water: Drink only boiled or sealed bottled water, avoid raw vegetables/fruits that cannot be peeled, and avoid unpasteurized dairy and street food.
+- Chronic carriage: Individuals shedding Salmonella Typhi in stool for >12 months require prolonged eradication therapy (e.g., Ciprofloxacin or Amoxicillin for 4–6 weeks) and must not handle food professionally.
+- Prevention / Vaccination: Typhoid Conjugate Vaccine (TCV) is recommended for routine immunisation in endemic areas and travellers.

@@ -1,0 +1,62 @@
+DENGUE FEVER — CLINICAL PRACTICE AND DIAGNOSTIC GUIDELINES
+
+OVERVIEW AND TRANSMISSION
+Dengue is an acute mosquito-borne viral infection caused by the Dengue virus (DENV, serotypes 1–4, Flaviviridae family).
+- Transmission occurs primarily through the bite of infected female Aedes aegypti and Aedes albopictus mosquitoes.
+- Incubation period is typically 4 to 10 days (range: 3 to 14 days) following an infectious bite.
+- Infection with one serotype provides lifelong immunity to that specific serotype, but only temporary cross-immunity to other serotypes. Subsequent infection with a different serotype increases the risk of severe dengue.
+
+CLINICAL PHASES
+1. Febrile Phase (Days 1–3 to 7):
+   - Sudden high fever (up to 40°C / 104°F)
+   - Severe retro-orbital (behind the eyes) headache
+   - Generalized myalgia (muscle pain), arthralgia (joint/bone pain — "breakbone fever")
+   - Facial flushing, maculopapular rash, mild mucosal bleeding (epistaxis, bleeding gums)
+2. Critical Phase (Days 3–7, coinciding with defervescence / fever subsiding):
+   - Systemic plasma leakage due to increased capillary permeability
+   - Pleural effusion, ascites, haemoconcentration (rising haematocrit), hypoproteinaemia
+   - Risk of progression to severe dengue, shock, or severe haemorrhage
+3. Recovery / Convalescent Phase (Days 7–10 onwards):
+   - Gradual reabsorption of extravasated fluid, stabilisation of haemodynamics
+   - Return of appetite, generalized convalescent rash (islands of white in a sea of red)
+
+DIAGNOSTIC TESTING TIMELINE AND INTERPRETATION
+- Days 1 to 5 of Fever (Early Acute Phase):
+  - Dengue NS1 Antigen (ELISA / Rapid): Detects non-structural protein 1 of the virus. High sensitivity in early illness before antibody production.
+  - RT-PCR: Confirms viral RNA; gold standard for confirmation and serotyping in early days.
+  - A negative NS1 test in early disease does not entirely exclude dengue; if clinical suspicion remains high, repeat testing or antibody testing later is indicated.
+- Days 5 to 7 Onwards (Late Acute to Convalescent Phase):
+  - Dengue IgM Antibody: Becomes detectable around day 4–5, peaks around week 2. Indicates recent primary or secondary dengue infection.
+  - Dengue IgG Antibody: Appears slowly in primary infection (detectable after day 10–14) but rises rapidly in secondary dengue (detectable from early days at high titre).
+  - Cross-reactivity: Serological antibody tests may cross-react with other flaviviruses (Zika, West Nile, Yellow fever, Japanese encephalitis). Clinical correlation is essential.
+
+LABORATORY MONITORING
+- Complete Blood Count (CBC):
+  - Leukopenia: Common early finding (WBC < 4,000/µL).
+  - Thrombocytopenia: Progressive platelet count drop (< 100,000/µL) requires frequent monitoring (daily or twice daily during the critical phase).
+  - Haematocrit (Hct): Rising haematocrit (≥ 20% increase from baseline) indicates significant plasma leakage and hemoconcentration.
+
+WARNING SIGNS REQUIRING IMMEDIATE HOSPITALISATION
+Patients must be instructed to seek immediate emergency care if they develop:
+- Severe abdominal pain or tenderness
+- Persistent vomiting (≥ 3 episodes in 24 hours) or inability to tolerate oral fluids
+- Clinical fluid accumulation (pleural effusion, ascites, swollen abdomen)
+- Mucosal bleeding (epistaxis, hematemesis, black tarry stools / melena, menorrhagia)
+- Lethargy, restlessness, confusion, or postural dizziness
+- Tender hepatomegaly (> 2 cm below costal margin)
+- Progressive increase in haematocrit with rapid decline in platelet count
+
+TREATMENT AND SUPPORTIVE CARE
+There is no specific antiviral treatment for dengue. Management is supportive and fluid-focused:
+- Hydration: Generous oral fluids (oral rehydration salts, fruit juice, soup) to compensate for plasma leakage and dehydration.
+- Fever and Pain Management:
+  - Paracetamol (Acetaminophen) is the drug of choice: maximum 3 to 4 grams per 24 hours in adults; 10–15 mg/kg/dose in children.
+  - CONTRAINDICATION: Strictly AVOID Non-Steroidal Anti-Inflammatory Drugs (NSAIDs) such as Ibuprofen, Aspirin, Diclofenac, Naproxen, or Mefenamic acid. NSAIDs cause platelet dysfunction, aggravate gastrointestinal ulceration, and dramatically increase bleeding risk.
+- Fluid Management in Critical Phase:
+  - Intravenous crystalloids (Normal Saline, Ringer's Lactate) titrated carefully based on haematocrit, vital signs, and urine output (maintain > 0.5 mL/kg/h).
+  - Platelet transfusions: Indicated only in cases of severe bleeding or profound thrombocytopenia with coagulopathy, NOT routinely for low platelet count alone.
+
+PATIENT COUNSELLING AND PREVENTION
+- Mosquito bite prevention: Use insect repellent (DEET, Picaridin), wear long sleeves, use mosquito nets.
+- Vector control: Eliminate standing water sources in and around the home (flower vases, coolers, open containers) where Aedes mosquitoes breed.
+- Isolation: Stay indoors under a bed net during the febrile phase to prevent transmitting the virus to biting mosquitoes and spreading to family members.

@@ -129,12 +129,18 @@ Do NOT invent, extrapolate, or assume any medical facts beyond what is stated he
    explicitly state: "Note: This information was not found in the retrieved
    references. Please consult your healthcare provider."
 8. Do NOT present this output as a medical diagnosis or treatment plan.
+9. CRITICAL — ALWAYS include the actual test result numbers, values, and
+   reference ranges exactly as they appear in the original clinical text.
+   For example: if the text says "TSH: 2.5 mIU/L (Normal: 0.45–4.5 mIU/L)",
+   you MUST include those numbers in simple_explanation with a plain-language
+   label, e.g. "Your TSH level was 2.5 mIU/L (normal range: 0.45–4.5 mIU/L)".
+   Never omit lab values, test results, or their normal ranges.
 
 === OUTPUT FORMAT ===
 Respond ONLY with valid JSON in exactly this structure — no extra text, no markdown fences:
 
 {{
-  "simple_explanation": "<Plain-language summary of what this section says>",
+  "simple_explanation": "<Plain-language summary of what this section says, including ALL actual test values and reference ranges>",
   "important_instructions": [
     "<Instruction 1>",
     "<Instruction 2>"

@@ -57,7 +57,7 @@ class MaskingEngine:
         )
         
         # Lab value patterns: "HbA1c 7.2%", "BP 120/80 mmHg", "glucose 150 mg/dL"
-        # More comprehensive patterns including standalone blood pressure readings
+        # Also captures thyroid-specific: "Free T3: 4.2 pmol/L", "TSH: 2.5 mIU/L"
         self.lab_value_pattern = re.compile(
             r'(?:'
             r'(?:HbA1c|HBA1C|A1C)\s+\d+(?:\.\d+)?%|'
@@ -66,7 +66,8 @@ class MaskingEngine:
             r'(?:glucose|sugar)\s+\d+(?:\.\d+)?(?:\s*mg/dL|\s*mmol/L)?|'
             r'(?:cholesterol|LDL|HDL)\s+\d+(?:\.\d+)?(?:\s*mg/dL|\s*mmol/L)?|'
             r'(?:creatinine)\s+\d+(?:\.\d+)?(?:\s*mg/dL|\s*µmol/L)?|'
-            r'(?:TSH)\s+\d+(?:\.\d+)?(?:\s*mIU/L)?|'
+            r'(?:Free\s+T3|Free\s+T4|FT3|FT4|fT3|fT4)\s*[:\-]?\s*\d+(?:\.\d+)?(?:\s*pmol/L|\s*pg/mL|\s*nmol/L)?|'
+            r'(?:TSH)\s*[:\-]?\s*\d+(?:\.\d+)?(?:\s*mIU/L|\s*µIU/mL|\s*mlU/L)?|'
             r'(?:hemoglobin|Hgb|Hb)\s+\d+(?:\.\d+)?(?:\s*g/dL)?'
             r')',
             re.IGNORECASE
