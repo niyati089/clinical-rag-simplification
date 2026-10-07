@@ -1,0 +1,72 @@
+
+> frontend@0.0.0 build
+> vite build
+
+[36mvite v8.3.3 [32mbuilding client environment for production...[36m[39m
+transforming...
+Γ£ô 16 modules transformed.
+Γ£ù Build failed in 81ms
+error during build:
+Build failed with 4 errors:
+
+[UNRESOLVED_IMPORT] Could not resolve './components/Disclaimer.jsx' in src/App.jsx
+   Γò¡ΓöÇ[ src/App.jsx:2:24 ]
+   Γöé
+ 2 Γöé import Disclaimer from "./components/Disclaimer.jsx";
+   Γöé                        ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ  
+   Γöé                                      Γò░ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ Module not found.
+   Γöé 
+   Γöé Help: 'src/App.jsx' is imported by the following path:
+   Γöé         - src/App.jsx
+   Γöé         - src/main.jsx
+   Γöé         - index.html
+ΓöÇΓöÇΓöÇΓò»
+
+[UNRESOLVED_IMPORT] Could not resolve './components/ProgressIndicator.jsx' in src/App.jsx
+   Γò¡ΓöÇ[ src/App.jsx:3:31 ]
+   Γöé
+ 3 Γöé import ProgressIndicator from "./components/ProgressIndicator.jsx";
+   Γöé                               ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ  
+   Γöé                                                 Γò░ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ Module not found.
+   Γöé 
+   Γöé Help: 'src/App.jsx' is imported by the following path:
+   Γöé         - src/App.jsx
+   Γöé         - src/main.jsx
+   Γöé         - index.html
+ΓöÇΓöÇΓöÇΓò»
+
+[UNRESOLVED_IMPORT] Could not resolve './components/ResultsView.jsx' in src/App.jsx
+   Γò¡ΓöÇ[ src/App.jsx:4:25 ]
+   Γöé
+ 4 Γöé import ResultsView from "./components/ResultsView.jsx";
+   Γöé                         ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ  
+   Γöé                                        Γò░ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ Module not found.
+   Γöé 
+   Γöé Help: 'src/App.jsx' is imported by the following path:
+   Γöé         - src/App.jsx
+   Γöé         - src/main.jsx
+   Γöé         - index.html
+ΓöÇΓöÇΓöÇΓò»
+
+[UNRESOLVED_IMPORT] Could not resolve './api.js' in src/App.jsx
+   Γò¡ΓöÇ[ src/App.jsx:5:66 ]
+   Γöé
+ 5 Γöé import { uploadDocument, startSimplify, getJob, getHealth } from "./api.js";
+   Γöé                                                                  ΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇ  
+   Γöé                                                                       Γò░ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ Module not found.
+   Γöé 
+   Γöé Help: 'src/App.jsx' is imported by the following path:
+   Γöé         - src/App.jsx
+   Γöé         - src/main.jsx
+   Γöé         - index.html
+ΓöÇΓöÇΓöÇΓò»
+
+    at aggregateBindingErrorsIntoJsError (file:///C:/AIML-10/clinical-rag-simplification/frontend/node_modules/rolldown/dist/shared/error-Bj1xBdEY.mjs:49:18)
+    at unwrapBindingResult (file:///C:/AIML-10/clinical-rag-simplification/frontend/node_modules/rolldown/dist/shared/error-Bj1xBdEY.mjs:19:128)
+    at #build (file:///C:/AIML-10/clinical-rag-simplification/frontend/node_modules/rolldown/dist/shared/rolldown-jmAeXo_f.mjs:133:34)
+    at async buildEnvironment (file:///C:/AIML-10/clinical-rag-simplification/frontend/node_modules/vite/dist/node/chunks/node.js:34660:66)
+    at async Object.build (file:///C:/AIML-10/clinical-rag-simplification/frontend/node_modules/vite/dist/node/chunks/node.js:35081:19)
+    at async Object.buildApp (file:///C:/AIML-10/clinical-rag-simplification/frontend/node_modules/vite/dist/node/chunks/node.js:35078:153)
+    at async CAC.<anonymous> (file:///C:/AIML-10/clinical-rag-simplification/frontend/node_modules/vite/dist/node/cli.js:780:3) {
+  errors: [Getter/Setter]
+}
